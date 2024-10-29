@@ -1,0 +1,510 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./src/output.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body class="flex flex-col md:flex-row bg-gray-200 p-1 max-h-full font-montserrat">
+    <div id="sidebar" class="absolute md:static p-2 mt-0.5 mr-2 md:h-full rounded-[10px] bg-white h-2 overflow-hidden md:w-96 w-full flex-col lg:flex ">
+        <main class="relative min-h-screen flex flex-col overflow-hidden w-full ">
+            <div class="divide-y divide-slate-200">
+                <!-- Accordion item -->
+                <div x-data="{ expanded: false }" class="py-2">
+                    <div>
+                        <button
+                            id="faqs-title-01"
+                            type="button"
+                            class="flex items-center justify-between w-full text-left font-semibold p-2 bg-red-600 rounded-[10px]"
+                            @click="expanded = !expanded"
+                            :aria-expanded="expanded"
+                            aria-controls="faqs-text-01"
+                        >
+                            <div class="flex justify-center items-center gap-2">
+                                <i class="fa-solid fa-rocket"></i>
+                                <span>Paramétrages</span>
+                            </div>
+                            <i :class="expanded ? 'fa-solid fa-caret-down' : 'fa-solid fa-caret-right'" class="fa-solid fa-caret-right"></i>
+                        </button>
+                    </div>
+                    <div
+                        id="faqs-text-01"
+                        role="region"
+                        aria-labelledby="faqs-title-01"
+                        class="grid text-sm text-slate-600 overflow-hidden transition-all duration-300 ease-in-out mt-2 "
+                        :class="expanded ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'"
+                    >
+                        <ul class="overflow-hidden">
+                            <li class="ml-5 p-1 hover:bg-green-500 rounded-[5px]"><a href="">Motifs</a></li>
+                            <li class="ml-5 p-1 hover:bg-green-500 rounded-[5px]"><a href="">Posologies</a></li>
+                            <li class="ml-5 p-1 hover:bg-green-500 rounded-[5px]"><a href="">Localités</a></li>
+                            <li class="ml-5 p-1 hover:bg-green-500 rounded-[5px]"><a href="">Rubriques</a></li>
+                        </ul>
+                    </div>
+                </div>                                                                                              
+            </div>
+            <div class="divide-y divide-slate-200">
+                <!-- Accordion item -->
+                <div x-data="{ expanded: false }" class="py-2">
+                    <div>
+                        <button
+                            id="faqs-title-01"
+                            type="button"
+                            class="flex items-center justify-between w-full text-left font-semibold p-2 rounded-[10px]"
+                            @click="expanded = !expanded"
+                            :aria-expanded="expanded"
+                            aria-controls="faqs-text-01"
+                        >
+                            <div class="flex justify-center items-center gap-2">
+                                <i class="fa-solid fa-rocket"></i>
+                                <span>Adhésions</span>
+                            </div>
+                            <i :class="expanded ? 'fa-solid fa-caret-down' : 'fa-solid fa-caret-right'" class="fa-solid fa-caret-right"></i>
+                        </button>
+                    </div>
+                    <div
+                        id="faqs-text-01"
+                        role="region"
+                        aria-labelledby="faqs-title-01"
+                        class="grid text-sm text-slate-600 overflow-hidden transition-all duration-300 ease-in-out mt-2"
+                        :class="expanded ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'"
+                    >
+                        <ul class="overflow-hidden">
+                            <li class="ml-5 p-1 hover:bg-green-500 rounded-[5px]"><a href="">Motifs</a></li>
+                            <li class="ml-5 p-1 hover:bg-green-500 rounded-[5px]"><a href="">Posologies</a></li>
+                            <li class="ml-5 p-1 hover:bg-green-500 rounded-[5px]"><a href="">Localités</a></li>
+                            <li class="ml-5 p-1 hover:bg-green-500 rounded-[5px]"><a href="">Rubriques</a></li>
+                        </ul>
+                    </div>
+                </div>                                                                                              
+            </div>
+            <div class="divide-y divide-slate-200">
+                <!-- Accordion item -->
+                <div x-data="{ expanded: false }" class="py-2">
+                    <div>
+                        <button
+                            id="faqs-title-01"
+                            type="button"
+                            class="flex items-center justify-between w-full text-left font-semibold p-2 rounded-[10px]"
+                            @click="expanded = !expanded"
+                            :aria-expanded="expanded"
+                            aria-controls="faqs-text-01"
+                        >
+                            <div class="flex justify-center items-center gap-2">
+                                <i class="fa-solid fa-rocket"></i>
+                                <span>Cartes</span>
+                            </div>
+                            <i :class="expanded ? 'fa-solid fa-caret-down' : 'fa-solid fa-caret-right'" class="fa-solid fa-caret-right"></i>
+                        </button>
+                    </div>
+                    <div
+                        id="faqs-text-01"
+                        role="region"
+                        aria-labelledby="faqs-title-01"
+                        class="grid text-sm text-slate-600 overflow-hidden transition-all duration-300 ease-in-out mt-2"
+                        :class="expanded ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'"
+                    >
+                        <ul class="overflow-hidden">
+                            <li class="ml-5 p-1 hover:bg-green-500 rounded-[5px]"><a href="">Motifs</a></li>
+                            <li class="ml-5 p-1 hover:bg-green-500 rounded-[5px]"><a href="">Posologies</a></li>
+                            <li class="ml-5 p-1 hover:bg-green-500 rounded-[5px]"><a href="">Localités</a></li>
+                            <li class="ml-5 p-1 hover:bg-green-500 rounded-[5px]"><a href="">Rubriques</a></li>
+                        </ul>
+                    </div>
+                </div>                                                                                              
+            </div>
+            <div class="divide-y divide-slate-200">
+                <!-- Accordion item -->
+                <div x-data="{ expanded: false }" class="py-2">
+                    <div>
+                        <button
+                            id="faqs-title-01"
+                            type="button"
+                            class="flex items-center justify-between w-full text-left font-semibold p-2 rounded-[10px]"
+                            @click="expanded = !expanded"
+                            :aria-expanded="expanded"
+                            aria-controls="faqs-text-01"
+                        >
+                            <div class="flex justify-center items-center gap-2">
+                                <i class="fa-solid fa-rocket"></i>
+                                <span>Cotisations</span>
+                            </div>
+                            <i :class="expanded ? 'fa-solid fa-caret-down' : 'fa-solid fa-caret-right'" class="fa-solid fa-caret-right"></i>
+                        </button>
+                    </div>
+                    <div
+                        id="faqs-text-01"
+                        role="region"
+                        aria-labelledby="faqs-title-01"
+                        class="grid text-sm text-slate-600 overflow-hidden transition-all duration-300 ease-in-out mt-2"
+                        :class="expanded ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'"
+                    >
+                        <ul class="overflow-hidden">
+                            <li class="ml-5 p-1 hover:bg-green-500 rounded-[5px]"><a href="">Motifs</a></li>
+                            <li class="ml-5 p-1 hover:bg-green-500 rounded-[5px]"><a href="">Posologies</a></li>
+                            <li class="ml-5 p-1 hover:bg-green-500 rounded-[5px]"><a href="">Localités</a></li>
+                            <li class="ml-5 p-1 hover:bg-green-500 rounded-[5px]"><a href="">Rubriques</a></li>
+                        </ul>
+                    </div>
+                </div>                                                                                              
+            </div>
+            <div class="divide-y divide-slate-200">
+                <!-- Accordion item -->
+                <div x-data="{ expanded: false }" class="py-2">
+                    <div>
+                        <button
+                            id="faqs-title-01"
+                            type="button"
+                            class="flex items-center justify-between w-full text-left font-semibold p-2 rounded-[10px]"
+                            @click="expanded = !expanded"
+                            :aria-expanded="expanded"
+                            aria-controls="faqs-text-01"
+                        >
+                            <div class="flex justify-center items-center gap-2">
+                                <i class="fa-solid fa-rocket"></i>
+                                <span>Prestations</span>
+                            </div>
+                            <i :class="expanded ? 'fa-solid fa-caret-down' : 'fa-solid fa-caret-right'" class="fa-solid fa-caret-right"></i>
+                        </button>
+                    </div>
+                    <div
+                        id="faqs-text-01"
+                        role="region"
+                        aria-labelledby="faqs-title-01"
+                        class="grid text-sm text-slate-600 overflow-hidden transition-all duration-300 ease-in-out mt-2"
+                        :class="expanded ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'"
+                    >
+                        <ul class="overflow-hidden">
+                            <li class="ml-5 p-1 hover:bg-green-500 rounded-[5px]"><a href="">Motifs</a></li>
+                            <li class="ml-5 p-1 hover:bg-green-500 rounded-[5px]"><a href="">Posologies</a></li>
+                            <li class="ml-5 p-1 hover:bg-green-500 rounded-[5px]"><a href="">Localités</a></li>
+                            <li class="ml-5 p-1 hover:bg-green-500 rounded-[5px]"><a href="">Rubriques</a></li>
+                        </ul>
+                    </div>
+                </div>                                                                                              
+            </div>
+            <div class="divide-y divide-slate-200">
+                <!-- Accordion item -->
+                <div x-data="{ expanded: false }" class="py-2">
+                    <div>
+                        <button
+                            id="faqs-title-01"
+                            type="button"
+                            class="flex items-center justify-between w-full text-left font-semibold p-2 rounded-[10px]"
+                            @click="expanded = !expanded"
+                            :aria-expanded="expanded"
+                            aria-controls="faqs-text-01"
+                        >
+                            <div class="flex justify-center items-center gap-2">
+                                <i class="fa-solid fa-rocket"></i>
+                                <span>Controles médical</span>
+                            </div>
+                            <i :class="expanded ? 'fa-solid fa-caret-down' : 'fa-solid fa-caret-right'" class="fa-solid fa-caret-right"></i>
+                        </button>
+                    </div>
+                    <div
+                        id="faqs-text-01"
+                        role="region"
+                        aria-labelledby="faqs-title-01"
+                        class="grid text-sm text-slate-600 overflow-hidden transition-all duration-300 ease-in-out mt-2"
+                        :class="expanded ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'"
+                    >
+                        <ul class="overflow-hidden">
+                            <li class="ml-5 p-1 hover:bg-green-500 rounded-[5px]"><a href="">Motifs</a></li>
+                            <li class="ml-5 p-1 hover:bg-green-500 rounded-[5px]"><a href="">Posologies</a></li>
+                            <li class="ml-5 p-1 hover:bg-green-500 rounded-[5px]"><a href="">Localités</a></li>
+                            <li class="ml-5 p-1 hover:bg-green-500 rounded-[5px]"><a href="">Rubriques</a></li>
+                        </ul>
+                    </div>
+                </div>                                                                                              
+            </div>
+            <div class="divide-y divide-slate-200">
+                <!-- Accordion item -->
+                <div x-data="{ expanded: false }" class="py-2">
+                    <div>
+                        <button
+                            id="faqs-title-01"
+                            type="button"
+                            class="flex items-center justify-between w-full text-left font-semibold p-2 rounded-[10px]"
+                            @click="expanded = !expanded"
+                            :aria-expanded="expanded"
+                            aria-controls="faqs-text-01"
+                        >
+                            <div class="flex justify-center items-center gap-2">
+                                <i class="fa-solid fa-rocket"></i>
+                                <span>Statistiques</span>
+                            </div>
+                            <i :class="expanded ? 'fa-solid fa-caret-down' : 'fa-solid fa-caret-right'" class="fa-solid fa-caret-right"></i>
+                        </button>
+                    </div>
+                    <div
+                        id="faqs-text-01"
+                        role="region"
+                        aria-labelledby="faqs-title-01"
+                        class="grid text-sm text-slate-600 overflow-hidden transition-all duration-300 ease-in-out mt-2"
+                        :class="expanded ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'"
+                    >
+                        <ul class="overflow-hidden">
+                            <li class="ml-5 p-1 hover:bg-green-500 rounded-[5px]"><a href="">Motifs</a></li>
+                            <li class="ml-5 p-1 hover:bg-green-500 rounded-[5px]"><a href="">Posologies</a></li>
+                            <li class="ml-5 p-1 hover:bg-green-500 rounded-[5px]"><a href="">Localités</a></li>
+                            <li class="ml-5 p-1 hover:bg-green-500 rounded-[5px]"><a href="">Rubriques</a></li>
+                        </ul>
+                    </div>
+                </div>                                                                                              
+            </div>
+            <div class="divide-y divide-slate-200">
+                <!-- Accordion item -->
+                <div x-data="{ expanded: false }" class="py-2">
+                    <div>
+                        <button
+                            id="faqs-title-01"
+                            type="button"
+                            class="flex items-center justify-between w-full text-left font-semibold p-2 rounded-[10px]"
+                            @click="expanded = !expanded"
+                            :aria-expanded="expanded"
+                            aria-controls="faqs-text-01"
+                        >
+                            <div class="flex justify-center items-center gap-2">
+                                <i class="fa-solid fa-rocket"></i>
+                                <span>Administration</span>
+                            </div>
+                            <i :class="expanded ? 'fa-solid fa-caret-down' : 'fa-solid fa-caret-right'" class="fa-solid fa-caret-right"></i>
+                        </button>
+                    </div>
+                    <div
+                        id="faqs-text-01"
+                        role="region"
+                        aria-labelledby="faqs-title-01"
+                        class="grid text-sm text-slate-600 overflow-hidden transition-all duration-300 ease-in-out mt-2"
+                        :class="expanded ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'"
+                    >
+                        <ul class="overflow-hidden">
+                            <li class="ml-5 p-1 hover:bg-green-500 rounded-[5px]"><a href="">Motifs</a></li>
+                            <li class="ml-5 p-1 hover:bg-green-500 rounded-[5px]"><a href="">Posologies</a></li>
+                            <li class="ml-5 p-1 hover:bg-green-500 rounded-[5px]"><a href="">Localités</a></li>
+                            <li class="ml-5 p-1 hover:bg-green-500 rounded-[5px]"><a href="">Rubriques</a></li>
+                        </ul>
+                    </div>
+                </div>                                                                                              
+            </div>
+        </main>
+    </div>
+    <div class="flex flex-col w-full">
+         <div class="w-full flex items-center h-13 bg-white rounded-[10px] px-2 py-5">
+            <img src="./src/assets/image/logo.png" alt="logo" class="mr-auto w-[100px] md:full">
+            <div class="ml-auto flex gap-2 items-center justify-center">
+                <div class="">
+                    <i class="fa-solid fa-bell"></i>
+                    <div class=""></div>
+                </div>
+                <div class="flex gap-1 justify-center items-center" >
+                    <img src="./src/assets/image/avatar-1.jpg" alt="avatar" class="w-10 h-10 rounded-full ">
+                    <i class="fa-solid fa-angle-down"></i>
+                </div>
+                <div class="flex md:hidden" x-data="{ isactive: false }">
+                    <i class="fa-solid fa-bars"></i>
+                    <div class=""></div>
+                </div>
+                
+            </div>
+         </div>
+         <div class="w-full h-full bg-white rounded-[10px] px-2 py-5 mt-2 ">
+            <div class="flex items-center justify-center">
+                <h1 class="font-bold">PARAMETRAGES</h1>
+                <div class="flex ml-auto items-center justify-center">
+                    <i class="fa-solid fa-magnifying-glass translate-x-5"></i>
+                    <input type="text" name="" id="" placeholder="Rechercher..."
+                    class="h-10 border-2 border-black rounded-full focus:ring-2 pl-6 ouline-none"
+                    >
+                </div>
+            </div>
+            <hr class="mt-5">
+            <div>
+                <div class="border-2 border-black p-5 rounded-[10px]">
+                    <div class="flex items-center">
+                        <h2>Liste des Prestataires</h2>
+                        <a href="#" class="flex font-semibold ml-auto items-center justify-center gap-2 ">
+                            <span>Ajouter</span>
+                            <i class="fa-solid fa-plus"></i>
+                        </a>
+                    </div>
+                    <hr class="mt-5">
+                    <div class="relative overflow-x-auto rounded-lg mt-5 border-2 border-black">
+                        <table class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400 cursor-pointer">
+                            <thead class="text-xs text-white uppercase bg-black dark:bg-gray-700 dark:text-gray-400">
+                                <tr>
+                                    <th scope="col" class="px-6 py-1">
+                                        ID POOL MEDICAL
+                                    </th>
+                                    <th scope="col" class="px-6 py-1">
+                                        ID PRACTICIEN
+                                    </th>
+                                    <th scope="col" class="px-6 py-1">
+                                        NOM ET PRENOMS 
+                                    </th>
+                                    <th scope="col" class="px-6 py-1">
+                                        ACTIVATION
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600 cursor-pointer">
+                                    <th scope="row" class=" overflow-hidden text-ellipsis px-6 py-1 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                        1
+                                    </th>
+                                    <td class="px-6 py-1 overflow-hidden text-ellipsis ">
+                                        Mark
+                                    </td>
+                                    <td class="px-6 py-1 overflow-hidden text-ellipsis ">
+                                        Otto
+                                    </td>
+                                    <td class="px-6 py-1 overflow-hidden text-ellipsis ">
+                                        @mdo
+                                    </td>
+                                </tr>
+                                <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600 cursor-pointer">
+                                    <th scope="row" class="px-6 py-1 font-medium text-black whitespace-nowrap dark:text-white overflow-hidden text-ellipsis ">
+                                        2
+                                    </th>
+                                    <td class="px-6 py-1 overflow-hidden text-ellipsis ">
+                                        Jacob
+                                    </td>
+                                    <td class="px-6 py-1 overflow-hidden text-ellipsis ">
+                                        Thornton
+                                    </td>
+                                    <td class="px-6 py-1 overflow-hidden text-ellipsis ">
+                                        @fat
+                                    </td>
+                                </tr>
+                                <tr class="bg-white dark:bg-gray-800 hover:bg-gray-50 dark:hover:bg-gray-600 cursor-pointer">
+                                    <th scope="row" class=" overflow-hidden text-ellipsis px-6 py-1 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                        3
+                                    </th>
+                                    <td class="px-6 py-1 overflow-hidden text-ellipsis ">
+                                        Larry
+                                    </td>
+                                    <td class="px-6 py-1 overflow-hidden text-ellipsis ">
+                                        Bird
+                                    </td>
+                                    <td class="px-6 py-1 overflow-hidden text-ellipsis ">
+                                        @twitter
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="flex mr-auto justify-center">
+                        <div class="justify-center mt-5 border-[0.5px] border-black items-center p-2 w-fit rounded-l-lg text-gray-400 cursor-not-allowed">Précédent</div>
+                        <div class="justify-center mt-5 border-[0.5px] border-black items-center p-2 w-[30px] cursor-pointer font-bold text-white bg-black">1</div>
+                        <div class="justify-center mt-5 border-[0.5px] border-black items-center p-2 w-[30px] cursor-pointer hover:text-white hover:bg-black">2</div>
+                        <div class="justify-center mt-5 border-[0.5px] border-black items-center p-2 w-[30px] cursor-pointer hover:text-white hover:bg-black">3</div>
+                        <div class="justify-center mt-5 border-[0.5px] border-black items-center p-2 w-[30px] cursor-pointer hover:text-white hover:bg-black">4</div>
+                        <div class="justify-center mt-5 border-[0.5px] border-black items-center p-2 w-fit rounded-r-lg cursor-pointer hover:text-white hover:bg-black">Suivant</div>
+                    </div>
+                </div>
+                <div class="border-black border-2 rounded-lg mt-10">
+                    <section class="flex flex-row flex-wrap m-8">
+
+                        <input id="tab-one" type="radio" name="tabs" class="peer/tab-one opacity-0 absolute" checked />
+                        <label for="tab-one" class="bg-slate-300 hover:bg-slate-200 peer-checked/tab-one:bg-amber-200 cursor-default p-4 rounded-t-lg block">
+                          Practiciens
+                        </label>
+                      
+                        <input id="tab-two" type="radio" name="tabs" class="peer/tab-two opacity-0 absolute" />
+                        <label for="tab-two" class="bg-slate-300 hover:bg-slate-200 peer-checked/tab-two:bg-amber-200 cursor-default p-4 rounded-t-lg block">
+                          Two
+                        </label>
+                      
+                        <div class="basis-full h-0"></div>
+                      
+                        <div class="hidden peer-checked/tab-one:block p-4 w-full">
+                            <div class="relative overflow-x-auto shadow-md sm:rounded-lg">
+                                <table class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400 cursor-pointer">
+                                    <thead class="text-xs text-white uppercase bg-black dark:bg-gray-700 dark:text-gray-400">
+                                        <tr>
+                                            <th scope="col" class="px-6 py-1">
+                                                ID POOL MEDICAL
+                                            </th>
+                                            <th scope="col" class="px-6 py-1">
+                                                ID PRACTICIEN
+                                            </th>
+                                            <th scope="col" class="px-6 py-1">
+                                                NOM ET PRENOMS 
+                                            </th>
+                                            <th scope="col" class="px-6 py-1">
+                                                ACTIVATION
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600 cursor-pointer">
+                                            <th scope="row" class=" overflow-hidden text-ellipsis px-6 py-1 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                                1
+                                            </th>
+                                            <td class="px-6 py-1 overflow-hidden text-ellipsis ">
+                                                Mark
+                                            </td>
+                                            <td class="px-6 py-1 overflow-hidden text-ellipsis ">
+                                                Otto
+                                            </td>
+                                            <td class="px-6 py-1 overflow-hidden text-ellipsis ">
+                                                @mdo
+                                            </td>
+                                        </tr>
+                                        <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600 cursor-pointer">
+                                            <th scope="row" class="px-6 py-1 font-medium text-black whitespace-nowrap dark:text-white overflow-hidden text-ellipsis ">
+                                                2
+                                            </th>
+                                            <td class="px-6 py-1 overflow-hidden text-ellipsis ">
+                                                Jacob
+                                            </td>
+                                            <td class="px-6 py-1 overflow-hidden text-ellipsis ">
+                                                Thornton
+                                            </td>
+                                            <td class="px-6 py-1 overflow-hidden text-ellipsis ">
+                                                @fat
+                                            </td>
+                                        </tr>
+                                        <tr class="bg-white dark:bg-gray-800 hover:bg-gray-50 dark:hover:bg-gray-600 cursor-pointer">
+                                            <th scope="row" class=" overflow-hidden text-ellipsis px-6 py-1 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                                3
+                                            </th>
+                                            <td class="px-6 py-1 overflow-hidden text-ellipsis ">
+                                                Larry
+                                            </td>
+                                            <td class="px-6 py-1 overflow-hidden text-ellipsis ">
+                                                Bird
+                                            </td>
+                                            <td class="px-6 py-1 overflow-hidden text-ellipsis ">
+                                                @twitter
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <div class="flex mr-auto justify-center">
+                                    <div class="justify-center mt-5 border-[0.5px] border-black items-center p-2 w-fit rounded-l-lg text-gray-400 cursor-not-allowed">Précédent</div>
+                                    <div class="justify-center mt-5 border-[0.5px] border-black items-center p-2 w-[30px] cursor-pointer font-bold text-white bg-black">1</div>
+                                    <div class="justify-center mt-5 border-[0.5px] border-black items-center p-2 w-[30px] cursor-pointer hover:text-white hover:bg-black">2</div>
+                                    <div class="justify-center mt-5 border-[0.5px] border-black items-center p-2 w-[30px] cursor-pointer hover:text-white hover:bg-black">3</div>
+                                    <div class="justify-center mt-5 border-[0.5px] border-black items-center p-2 w-[30px] cursor-pointer hover:text-white hover:bg-black">4</div>
+                                    <div class="justify-center mt-5 border-[0.5px] border-black items-center p-2 w-fit rounded-r-lg cursor-pointer hover:text-white hover:bg-black">Suivant</div>
+                                </div>
+                            </div>
+    
+                        </div>
+                        <div class="bg-amber-200 hidden peer-checked/tab-two:block p-4 w-full">
+                          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non adipisci magnam possimus modi consectetur obcaecati ullam odit nisi sapiente delectus id aliquid aut consequatur soluta consequuntur dignissimos repudiandae, quod ea et ad! Quidem earum nulla accusamus consequuntur.
+                        </div>
+                      
+                      </section>
+                </div>
+            </div>
+         </div>   
+    </div>
+    <script defer src="https://cdn.jsdelivr.net/npm/@alpinejs/focus@3.x.x/dist/cdn.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-JobWAqYk5CSjWuVV3mxgS+MmccJqkrBaDhk8SKS1BW+71dJ9gzascwzW85UwGhxiSyR7Pxhu50k+Nl3+o5I49A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+</html>
