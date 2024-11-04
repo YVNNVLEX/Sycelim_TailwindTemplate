@@ -10,7 +10,7 @@ $(() => {
         if (!$(e.target).closest("#avatarClick").length && !$(e.target).closest("#userSet").length) {
             $("#userSet").hide();
         }
-    });
+    })
 
     $("#curtain").click((e)=>{
         e.preventDefault()
