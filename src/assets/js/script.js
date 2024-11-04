@@ -15,6 +15,5 @@ $(() => {
     $("#curtain").click((e)=>{
         e.preventDefault()
         $("#sidebar").toggleClass("active")
-        $("#body").
     })
 });
