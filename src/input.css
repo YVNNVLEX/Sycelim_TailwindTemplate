@@ -27,3 +27,8 @@ body::-webkit-scrollbar-thumb {
     background-color: grey;    /* color of the scroll thumb */
     border-radius: 10px;  /* creates padding around scroll thumb */
   }
+
+#sidebar.active{
+  height: fit-content;
+  transition: height 2s ease-in-out;
+}
