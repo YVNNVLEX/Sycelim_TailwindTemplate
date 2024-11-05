@@ -624,8 +624,8 @@
                         <div class="flex items-center">
                             <h2 class="text-lg">Liste des Prestataires</h2>
                             <a href="./src/pages/addRubriques.html" class="flex font-semibold rounded-lg ml-auto items-center 
-                            justify-center gap-2 border-2 p-1 border-black bg-black text-white hover:text-black hover:bg-white hover:scale-75 transition-all ease-in-out duration-100">
-                                <span>Ajouter</span>
+                            justify-center gap-2 border-2 p-1 border-black bg-black text-white">
+                                <span class="text-xs">Ajouter</span>
                                 <i class="fa-solid fa-plus"></i>
                             </a>
                         </div>
@@ -694,24 +694,24 @@
                                 </tbody>
                             </table>
                         </div>
-                        <div class="flex mr-auto items-center gap-1 mt-2">
-                            <span>Nombre de ligne</span>
-                            <select id="countries" class="bg-gray-50 border w-10 focus:ring-2 focus:ring-blue-600 border-gray-300 text-gray-900 text-sm rounded-lg py-2">
-                                <option selected>1</option>
-                                <option value="US">2</option>
-                                <option value="CA">3</option>
-                                <option value="FR">4</option>
-                                <option value="DE">5</option>
-                            </select>
+                        <div class="flex flex-row">
+                            <div class="flex mr-auto items-center gap-3 mt-2">
+                                <span>Nombre de ligne</span>
+                                <select id="countries" class="bg-gray-50 border w-16 focus:ring-2 focus:ring-blue-600 items-center border-gray-300 text-gray-900 text-sm rounded-lg p-2 ">
+                                    <option selected>20</option>
+                                    <option value="US">50</option>
+                                    <option value="CA">100</option>
+                                </select>
+                            </div>
+                            <div class="flex justify-center mb-3 ml-auto">
+                                <div class="justify-center mt-5 border-[0.5px] border-black items-center p-1 w-fit rounded-l-lg text-gray-400 cursor-not-allowed"><i class="fa-solid fa-angles-left"></i></div>
+                                <div class="justify-center mt-5 border-[0.5px] border-black items-center p-1 w-fit text-gray-400 cursor-not-allowed"><i class="fa-solid fa-angle-left"></i></div>
+                                <div class="justify-center mt-5 border-[0.5px] border-black items-center p-1 min-w-fit cursor-pointer font-bold text-white bg-black flex gap-1"> <span>1</span> à <span>1</span> sur <span>1</span></div>
+                                <div class="justify-center mt-5 border-[0.5px] border-black items-center p-1 w-fit cursor-pointer hover:text-white hover:bg-black"><i class="fa-solid fa-angle-right"></i></div>
+                                <div class="justify-center mt-5 border-[0.5px] border-black items-center p-1 w-fit rounded-r-lg cursor-pointer hover:text-white hover:bg-black"><i class="fa-solid fa-angles-right"></i></div>
+                            </div>
                         </div>
-                        <div class="flex mr-auto justify-center mb-3">
-                            <div class="justify-center mt-5 border-[0.5px] border-black items-center p-2 w-fit rounded-l-lg text-gray-400 cursor-not-allowed"><i class="fa-solid fa-angles-left"></i></div>
-                            <div class="justify-center mt-5 border-[0.5px] border-black items-center p-2 w-fit text-gray-400 cursor-not-allowed"><i class="fa-solid fa-angle-left"></i></div>
-                            <div class="justify-center mt-5 border-[0.5px] border-black items-center p-2 w-[30px] cursor-pointer font-bold text-white bg-black">1</div>
-                            <div class="justify-center mt-5 border-[0.5px] border-black items-center p-2 w-fit cursor-pointer hover:text-white hover:bg-black"><i class="fa-solid fa-angle-right"></i></div>
-                            <div class="justify-center mt-5 border-[0.5px] border-black items-center p-2 w-fit rounded-r-lg cursor-pointer hover:text-white hover:bg-black"><i class="fa-solid fa-angles-right"></i></div>
-                        </div>
-                        <section class="flex flex-row flex-wrap">
+                        <section class="flex flex-row flex-wrap mt-10">
     
                             <input id="tab-one" type="radio" name="tabs" class="peer/tab-one opacity-0 absolute" checked />
                             <label for="tab-one" class="bg-gray-500 text-white peer-checked/tab-one:bg-black transition-all duration-200 cursor-pointer p-4 block">
@@ -790,22 +790,22 @@
                                         </tbody>
                                     </table>
                                 </div>
-                                <div class="flex mr-auto items-center gap-1 mt-2">
-                                    <span>Nombre de ligne</span>
-                                    <select id="countries" class="bg-gray-50 border w-10 focus:ring-2 focus:ring-blue-600 border-gray-300 text-gray-900 text-sm rounded-lg py-2">
-                                        <option selected>1</option>
-                                        <option value="US">2</option>
-                                        <option value="CA">3</option>
-                                        <option value="FR">4</option>
-                                        <option value="DE">5</option>
-                                    </select>
-                                </div>
-                                <div class="flex mr-auto justify-center">
-                                    <div class="justify-center mt-5 border-[0.5px] border-black items-center p-2 w-fit rounded-l-lg text-gray-400 cursor-not-allowed"><i class="fa-solid fa-angles-left"></i></div>
-                                    <div class="justify-center mt-5 border-[0.5px] border-black items-center p-2 w-fit text-gray-400 cursor-not-allowed"><i class="fa-solid fa-angle-left"></i></div>
-                                    <div class="justify-center mt-5 border-[0.5px] border-black items-center p-2 w-[30px] cursor-pointer font-bold text-white bg-black">1</div>
-                                    <div class="justify-center mt-5 border-[0.5px] border-black items-center p-2 w-fit cursor-pointer hover:text-white hover:bg-black"><i class="fa-solid fa-angle-right"></i></div>
-                                    <div class="justify-center mt-5 border-[0.5px] border-black items-center p-2 w-fit rounded-r-lg cursor-pointer hover:text-white hover:bg-black"><i class="fa-solid fa-angles-right"></i></div>
+                                <div class="flex flex-row">
+                                    <div class="flex mr-auto items-center gap-3 mt-2">
+                                        <span>Nombre de ligne</span>
+                                        <select id="countries" class="bg-gray-50 border w-16 focus:ring-2 focus:ring-blue-600 items-center border-gray-300 text-gray-900 text-sm rounded-lg p-2 ">
+                                            <option selected>20</option>
+                                            <option value="US">50</option>
+                                            <option value="CA">100</option>
+                                        </select>
+                                    </div>
+                                    <div class="flex justify-center mb-3 ml-auto">
+                                        <div class="justify-center mt-5 border-[0.5px] border-black items-center p-1 w-fit rounded-l-lg text-gray-400 cursor-not-allowed"><i class="fa-solid fa-angles-left"></i></div>
+                                        <div class="justify-center mt-5 border-[0.5px] border-black items-center p-1 w-fit text-gray-400 cursor-not-allowed"><i class="fa-solid fa-angle-left"></i></div>
+                                        <div class="justify-center mt-5 border-[0.5px] border-black items-center p-1 min-w-fit cursor-pointer font-bold text-white bg-black flex gap-1"> <span>1</span> à <span>1</span> sur <span>1</span></div>
+                                        <div class="justify-center mt-5 border-[0.5px] border-black items-center p-1 w-fit cursor-pointer hover:text-white hover:bg-black"><i class="fa-solid fa-angle-right"></i></div>
+                                        <div class="justify-center mt-5 border-[0.5px] border-black items-center p-1 w-fit rounded-r-lg cursor-pointer hover:text-white hover:bg-black"><i class="fa-solid fa-angles-right"></i></div>
+                                    </div>
                                 </div>
                             </div>
                             <div class="bg-gray-500 text-white hidden peer-checked/tab-two:block p-4 w-full">
