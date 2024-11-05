@@ -14,6 +14,11 @@ $(() => {
 
     $("#curtain").click((e)=>{
         e.preventDefault()
-        $("#sidebar").toggleClass("active")
-    })
+        $("#sidebar").toggleClass("hidden")
+        }
+    )
+    if(window.innerWidth <= 767){
+        $('#sidebar').addClass("hidden")
+    }
+    
 });
