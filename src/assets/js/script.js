@@ -10,11 +10,15 @@ $(() => {
         if (!$(e.target).closest("#avatarClick").length && !$(e.target).closest("#userSet").length) {
             $("#userSet").hide();
         }
-    });
+    })
 
     $("#curtain").click((e)=>{
         e.preventDefault()
-        $("#sidebar").toggleClass("active")
-        $("#body").
-    })
+        $("#sidebar").toggleClass("hidden")
+        }
+    )
+    if(window.innerWidth <= 767){
+        $('#sidebar').addClass("hidden")
+    }
+    
 });
