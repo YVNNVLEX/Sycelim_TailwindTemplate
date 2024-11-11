@@ -34,8 +34,14 @@ body::-webkit-scrollbar-thumb {
   display: flex;
 }
 
-@-moz-document url-prefix(){
-  #type,#countries{
-      
+/* Centrage du texte pour tous les navigateurs */
+#countries,#type {
+  text-align: right;
+}
+
+/* CSS spécifique à Firefox */
+@-moz-document url-prefix() {
+  #countries option, #type option {
+      text-align: right;
   }
 }
