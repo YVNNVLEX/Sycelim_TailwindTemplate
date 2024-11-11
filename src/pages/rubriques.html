@@ -8,10 +8,8 @@
 </head>
 <body class="flex flex-col bg-gray-200 p-1 max-h-full font-montserrat mt-1 mx-1">
     <div>
-        <div class="w-full flex items-center h-13 bg-white rounded-[10px] px-2 py-5 ">
-            <a href="../../index.html">
-                <img src="../assets/image/logo.png" alt="logo" class="mr-auto w-[100px] md:full">
-              </a>
+        <div class="w-full flex items-center h-13 bg-white rounded-[10px] px-[14px] py-5 ">
+            <img src="../assets/image/logo.png" alt="logo" class="mr-auto w-[100px] md:full">
             <div class="ml-auto flex gap-5 items-center justify-center">
                 <div class="rounded-full bg-black hover:bg-white hover:text-black text-white p-2 cursor-pointer w-[40px] h-[40px] flex justify-center items-center transition-all ease-in-out duration-300 hover:border-2 hover:border-black">
                     <i class="fa-solid fa-bell "></i>
@@ -30,7 +28,7 @@
                 <h1>Bienvenue John Doe</h1>
                 <p>Administrateur</p>
             </div>
-            <a class="flex items-center gap-2 hover:bg-gray-300 p-2 rounded-lg" href="./login.html">
+            <a class="flex items-center gap-2 hover:bg-gray-300 p-2 rounded-lg" href="./src/pages/login.html">
                 <i class="fa-solid fa-user"></i>
                 <span>Mon compte</span>
             </a>
@@ -45,8 +43,8 @@
         </div>
     </div>
     <div class="flex w-full mr-1">
-        <div :class="isactive ? 'h-16' : 'h-0' " class="hidden md:flex p-2 mt-2 mr-2 md:h-full transition-all ease-in-out duration-100 rounded-[10px] bg-white h-2 overflow-hidden md:w-60 flex-col ">
-            <main class="relative min-h-screen flex flex-col overflow-hidden w-full ">
+        <div :class="isactive ? 'h-16' : 'h-0' " class="hidden md:flex p-4 mt-2 mr-2 md:h-full transition-all ease-in-out duration-100 rounded-[10px] bg-white h-2 overflow-hidden md:w-[17rem] flex-col ">
+            <main class="min-h-screen flex flex-col overflow-hidden w-full ">
                 <div class="divide-y divide-slate-200">
                     <div x-data="{ expanded: false }">
                         <div>
@@ -73,10 +71,10 @@
                             :class="expanded ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'"
                         >
                             <ul class="overflow-hidden">
-                                <li class="ml-5 p-1 hover:bg-gray-300 cursor-pointer rounded-[5px]"><a href="">Motifs</a></li>
-                                <li class="ml-5 p-1 hover:bg-gray-300 cursor-pointer rounded-[5px]"><a href="">Posologies</a></li>
-                                <li class="ml-5 p-1 hover:bg-gray-300 cursor-pointer rounded-[5px]"><a href="">Localités</a></li>
-                                <li class="ml-5 p-1 hover:bg-gray-300 cursor-pointer rounded-[5px]"><a href="">Rubriques</a></li>
+                                <li class="ml-[1rem] p-1 hover:bg-gray-300 cursor-pointer rounded-[5px]"><a class="pl-[0.25rem]" href="">Motifs</a></li>
+                                <li class="ml-[1rem] p-1 hover:bg-gray-300 cursor-pointer rounded-[5px]"><a class="pl-[0.25rem]" href="">Posologies</a></li>
+                                <li class="ml-[1rem] p-1 hover:bg-gray-300 cursor-pointer rounded-[5px]"><a class="pl-[0.25rem]" href="">Localités</a></li>
+                                <li class="ml-[1rem] p-1 hover:bg-gray-300 cursor-pointer rounded-[5px]"><a class="pl-[0.25rem]" href="">Rubriques</a></li>
                             </ul>
                         </div>
                     </div>                                                                                              
@@ -108,10 +106,10 @@
                             :class="expanded ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'"
                         >
                             <ul class="overflow-hidden">
-                                <li class="ml-5 p-1 hover:bg-gray-300 cursor-pointer rounded-[5px]"><a href="">Motifs</a></li>
-                                <li class="ml-5 p-1 hover:bg-gray-300 cursor-pointer rounded-[5px]"><a href="">Posologies</a></li>
-                                <li class="ml-5 p-1 hover:bg-gray-300 cursor-pointer rounded-[5px]"><a href="">Localités</a></li>
-                                <li class="ml-5 p-1 hover:bg-gray-300 cursor-pointer rounded-[5px]"><a href="">Rubriques</a></li>
+                                <li class="ml-[1rem] p-1 hover:bg-gray-300 cursor-pointer rounded-[5px]"><a class="pl-[0.25rem]" href="">Motifs</a></li>
+                                <li class="ml-[1rem] p-1 hover:bg-gray-300 cursor-pointer rounded-[5px]"><a class="pl-[0.25rem]" href="">Posologies</a></li>
+                                <li class="ml-[1rem] p-1 hover:bg-gray-300 cursor-pointer rounded-[5px]"><a class="pl-[0.25rem]" href="">Localités</a></li>
+                                <li class="ml-[1rem] p-1 hover:bg-gray-300 cursor-pointer rounded-[5px]"><a class="pl-[0.25rem]" href="">Rubriques</a></li>
                             </ul>
                         </div>
                     </div>                                                                                              
@@ -143,10 +141,10 @@
                             :class="expanded ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'"
                         >
                             <ul class="overflow-hidden">
-                                <li class="ml-5 p-1 hover:bg-gray-300 cursor-pointer rounded-[5px]"><a href="">Motifs</a></li>
-                                <li class="ml-5 p-1 hover:bg-gray-300 cursor-pointer rounded-[5px]"><a href="">Posologies</a></li>
-                                <li class="ml-5 p-1 hover:bg-gray-300 cursor-pointer rounded-[5px]"><a href="">Localités</a></li>
-                                <li class="ml-5 p-1 hover:bg-gray-300 cursor-pointer rounded-[5px]"><a href="">Rubriques</a></li>
+                                <li class="ml-[1rem] p-1 hover:bg-gray-300 cursor-pointer rounded-[5px]"><a class="pl-[0.25rem]" href="">Motifs</a></li>
+                                <li class="ml-[1rem] p-1 hover:bg-gray-300 cursor-pointer rounded-[5px]"><a class="pl-[0.25rem]" href="">Posologies</a></li>
+                                <li class="ml-[1rem] p-1 hover:bg-gray-300 cursor-pointer rounded-[5px]"><a class="pl-[0.25rem]" href="">Localités</a></li>
+                                <li class="ml-[1rem] p-1 hover:bg-gray-300 cursor-pointer rounded-[5px]"><a class="pl-[0.25rem]" href="">Rubriques</a></li>
                             </ul>
                         </div>
                     </div>                                                                                              
@@ -178,10 +176,10 @@
                             :class="expanded ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'"
                         >
                             <ul class="overflow-hidden">
-                                <li class="ml-5 p-1 hover:bg-gray-300 cursor-pointer rounded-[5px]"><a href="">Motifs</a></li>
-                                <li class="ml-5 p-1 hover:bg-gray-300 cursor-pointer rounded-[5px]"><a href="">Posologies</a></li>
-                                <li class="ml-5 p-1 hover:bg-gray-300 cursor-pointer rounded-[5px]"><a href="">Localités</a></li>
-                                <li class="ml-5 p-1 hover:bg-gray-300 cursor-pointer rounded-[5px]"><a href="">Rubriques</a></li>
+                                <li class="ml-[1rem] p-1 hover:bg-gray-300 cursor-pointer rounded-[5px]"><a class="pl-[0.25rem]" href="">Motifs</a></li>
+                                <li class="ml-[1rem] p-1 hover:bg-gray-300 cursor-pointer rounded-[5px]"><a class="pl-[0.25rem]" href="">Posologies</a></li>
+                                <li class="ml-[1rem] p-1 hover:bg-gray-300 cursor-pointer rounded-[5px]"><a class="pl-[0.25rem]" href="">Localités</a></li>
+                                <li class="ml-[1rem] p-1 hover:bg-gray-300 cursor-pointer rounded-[5px]"><a class="pl-[0.25rem]" href="">Rubriques</a></li>
                             </ul>
                         </div>
                     </div>                                                                                              
@@ -213,10 +211,10 @@
                             :class="expanded ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'"
                         >
                             <ul class="overflow-hidden">
-                                <li class="ml-5 p-1 hover:bg-gray-300 cursor-pointer rounded-[5px]"><a href="">Motifs</a></li>
-                                <li class="ml-5 p-1 hover:bg-gray-300 cursor-pointer rounded-[5px]"><a href="">Posologies</a></li>
-                                <li class="ml-5 p-1 hover:bg-gray-300 cursor-pointer rounded-[5px]"><a href="">Localités</a></li>
-                                <li class="ml-5 p-1 hover:bg-gray-300 cursor-pointer rounded-[5px]"><a href="">Rubriques</a></li>
+                                <li class="ml-[1rem] p-1 hover:bg-gray-300 cursor-pointer rounded-[5px]"><a class="pl-[0.25rem]" href="">Motifs</a></li>
+                                <li class="ml-[1rem] p-1 hover:bg-gray-300 cursor-pointer rounded-[5px]"><a class="pl-[0.25rem]" href="">Posologies</a></li>
+                                <li class="ml-[1rem] p-1 hover:bg-gray-300 cursor-pointer rounded-[5px]"><a class="pl-[0.25rem]" href="">Localités</a></li>
+                                <li class="ml-[1rem] p-1 hover:bg-gray-300 cursor-pointer rounded-[5px]"><a class="pl-[0.25rem]" href="">Rubriques</a></li>
                             </ul>
                         </div>
                     </div>                                                                                              
@@ -235,7 +233,7 @@
                             >
                                 <div class="flex justify-center items-center gap-2">
                                     <i class="fa-solid fa-note-sticky"></i>
-                                    <span>Controles médical</span>
+                                    <span>Controle médical</span>
                                 </div>
                                 <i :class="expanded ? 'rotate-90' : 'fa-solid fa-caret-right'" class="fa-solid fa-caret-right transition-all duration-300 ease-in-out"></i>
                             </button>
@@ -248,10 +246,10 @@
                             :class="expanded ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'"
                         >
                             <ul class="overflow-hidden">
-                                <li class="ml-5 p-1 hover:bg-gray-300 cursor-pointer rounded-[5px]"><a href="">Motifs</a></li>
-                                <li class="ml-5 p-1 hover:bg-gray-300 cursor-pointer rounded-[5px]"><a href="">Posologies</a></li>
-                                <li class="ml-5 p-1 hover:bg-gray-300 cursor-pointer rounded-[5px]"><a href="">Localités</a></li>
-                                <li class="ml-5 p-1 hover:bg-gray-300 cursor-pointer rounded-[5px]"><a href="">Rubriques</a></li>
+                                <li class="ml-[1rem] p-1 hover:bg-gray-300 cursor-pointer rounded-[5px]"><a class="pl-[0.25rem]" href="">Motifs</a></li>
+                                <li class="ml-[1rem] p-1 hover:bg-gray-300 cursor-pointer rounded-[5px]"><a class="pl-[0.25rem]" href="">Posologies</a></li>
+                                <li class="ml-[1rem] p-1 hover:bg-gray-300 cursor-pointer rounded-[5px]"><a class="pl-[0.25rem]" href="">Localités</a></li>
+                                <li class="ml-[1rem] p-1 hover:bg-gray-300 cursor-pointer rounded-[5px]"><a class="pl-[0.25rem]" href="">Rubriques</a></li>
                             </ul>
                         </div>
                     </div>                                                                                              
@@ -283,10 +281,10 @@
                             :class="expanded ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'"
                         >
                             <ul class="overflow-hidden">
-                                <li class="ml-5 p-1 hover:bg-gray-300 cursor-pointer rounded-[5px]"><a href="">Motifs</a></li>
-                                <li class="ml-5 p-1 hover:bg-gray-300 cursor-pointer rounded-[5px]"><a href="">Posologies</a></li>
-                                <li class="ml-5 p-1 hover:bg-gray-300 cursor-pointer rounded-[5px]"><a href="">Localités</a></li>
-                                <li class="ml-5 p-1 hover:bg-gray-300 cursor-pointer rounded-[5px]"><a href="">Rubriques</a></li>
+                                <li class="ml-[1rem] p-1 hover:bg-gray-300 cursor-pointer rounded-[5px]"><a class="pl-[0.25rem]" href="">Motifs</a></li>
+                                <li class="ml-[1rem] p-1 hover:bg-gray-300 cursor-pointer rounded-[5px]"><a class="pl-[0.25rem]" href="">Posologies</a></li>
+                                <li class="ml-[1rem] p-1 hover:bg-gray-300 cursor-pointer rounded-[5px]"><a class="pl-[0.25rem]" href="">Localités</a></li>
+                                <li class="ml-[1rem] p-1 hover:bg-gray-300 cursor-pointer rounded-[5px]"><a class="pl-[0.25rem]" href="">Rubriques</a></li>
                             </ul>
                         </div>
                     </div>                                                                                              
@@ -318,10 +316,10 @@
                             :class="expanded ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'"
                         >
                             <ul class="overflow-hidden">
-                                <li class="ml-5 p-1 hover:bg-gray-300 cursor-pointer rounded-[5px]"><a href="">Motifs</a></li>
-                                <li class="ml-5 p-1 hover:bg-gray-300 cursor-pointer rounded-[5px]"><a href="">Posologies</a></li>
-                                <li class="ml-5 p-1 hover:bg-gray-300 cursor-pointer rounded-[5px]"><a href="">Localités</a></li>
-                                <li class="ml-5 p-1 hover:bg-gray-300 cursor-pointer rounded-[5px]"><a href="">Rubriques</a></li>
+                                <li class="ml-[1rem] p-1 hover:bg-gray-300 cursor-pointer rounded-[5px]"><a class="pl-[0.25rem]" href="">Motifs</a></li>
+                                <li class="ml-[1rem] p-1 hover:bg-gray-300 cursor-pointer rounded-[5px]"><a class="pl-[0.25rem]" href="">Posologies</a></li>
+                                <li class="ml-[1rem] p-1 hover:bg-gray-300 cursor-pointer rounded-[5px]"><a class="pl-[0.25rem]" href="">Localités</a></li>
+                                <li class="ml-[1rem] p-1 hover:bg-gray-300 cursor-pointer rounded-[5px]"><a class="pl-[0.25rem]" href="">Rubriques</a></li>
                             </ul>
                         </div>
                     </div>                                                                                              
@@ -611,234 +609,220 @@
                         </div>                                                                                              
                     </div> 
         </div>
-            <div class="w-full h-fit bg-white rounded-[10px] px-2 py-5 mt-2 " id="body">
+            <div class="w-full h-fit bg-white rounded-[10px] p-[14px] mt-2 " id="body">
+                <div class="flex items-center justify-center">
+                    <h1 class="font-bold text-base md:text-xl mr-auto">Fiche prestataires</h1> 
+                </div>
                 <div>
-                    <div class="border-2 border-black p-5 rounded-[10px] mt-10">
-                        <div class="flex gap-1 items-center">
-                            <span>Nombre de ligne</span>
-                            <select id="countries" class="bg-gray-50 border w-10 focus:ring-2 focus:ring-blue-600 border-gray-300 text-gray-900 text-sm rounded-lg py-2">
-                                <option selected>1</option>
-                                <option value="US">2</option>
-                                <option value="CA">3</option>
-                                <option value="FR">4</option>
-                                <option value="DE">5</option>
-                            </select>
+                    <div class="border-[1.5px] border-black p-[14px] rounded-[10px] mt-5">
+                        <div class="flex items-center">
+                            <h2 class="text-lg">Liste des Prestataires</h2>
                         </div>
-                        <div class="relative overflow-x-auto rounded-lg mt-5 border-2 border-black">
+                        <hr class="mt-2">
+                        <div class="overflow-x-auto mt-5 border-[0.5px] border-black">
                             <table class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400 cursor-pointer">
                                 <thead class="text-xs text-white uppercase bg-black dark:bg-gray-700 dark:text-gray-400">
                                     <tr>
                                         <th scope="col" class="px-6 py-2 lg:text-[14px]">
-                                            ID POOL MEDICAL
+                                            ID 
                                         </th>
-                                        <th scope="col" class="px-6 py-2 lg:text-[14px]">
-                                            ID PRACTICIEN
+                                        <th scope="col" class="px-6 py-2 lg:text-[14px] border-l-[0.5px] border-l-white-700">
+                                            LOCALITES
                                         </th>
-                                        <th scope="col" class="px-6 py-2 lg:text-[14px]">
-                                            NOM ET PRENOMS 
-                                        </th>
-                                        <th scope="col" class="px-6 py-2 lg:text-[14px]">
-                                            ACTIVATION
+                                        <th scope="col" class="px-6 py-2 lg:text-[14px] border-l-[0.5px] border-l-white-700">
+                                            TYPE 
                                         </th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600 cursor-pointer">
                                         <th scope="row" class=" overflow-hidden text-ellipsis px-6 py-1 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                                            1
+                                            0006
                                         </th>
-                                        <td class="px-6 py-1 overflow-hidden text-ellipsis ">
-                                            Mark
+                                        <td class="px-6 py-1 overflow-hidden text-ellipsis border-l-[0.5px] border-l-white-700 ">
+                                            Abidjan
                                         </td>
-                                        <td class="px-6 py-1 overflow-hidden text-ellipsis ">
+                                        <td class="px-6 py-1 overflow-hidden text-ellipsis border-l-[0.5px] border-l-white-700 ">
                                             Otto
                                         </td>
-                                        <td class="px-6 py-1 overflow-hidden text-ellipsis ">
-                                            @mdo
-                                        </td>
                                     </tr>
-                                    <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600 cursor-pointer">
-                                        <th scope="row" class="px-6 py-1 font-medium text-black whitespace-nowrap dark:text-white overflow-hidden text-ellipsis ">
-                                            2
+                                    <tr class="text-xs font-bold text-white uppercase bg-black dark:bg-gray-700 dark:text-gray-400">
+                                        <th scope="row" class="px-6 py-1 whitespace-nowrap dark:text-white overflow-hidden text-ellipsis ">
+                                            STATUT
                                         </th>
-                                        <td class="px-6 py-1 overflow-hidden text-ellipsis ">
-                                            Jacob
+                                        <td class="px-6 py-1 overflow-hidden text-ellipsis border-l-[0.5px] border-l-white-700 ">
+                                            NIVEAU
                                         </td>
-                                        <td class="px-6 py-1 overflow-hidden text-ellipsis ">
-                                            Thornton
-                                        </td>
-                                        <td class="px-6 py-1 overflow-hidden text-ellipsis ">
-                                            @fat
-                                        </td>
-                                    </tr>
-                                    <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600 cursor-pointer">
-                                        <th scope="row" class="px-6 py-1 font-medium text-black whitespace-nowrap dark:text-white overflow-hidden text-ellipsis ">
-                                            2
-                                        </th>
-                                        <td class="px-6 py-1 overflow-hidden text-ellipsis ">
-                                            Jacob
-                                        </td>
-                                        <td class="px-6 py-1 overflow-hidden text-ellipsis ">
-                                            Thornton
-                                        </td>
-                                        <td class="px-6 py-1 overflow-hidden text-ellipsis ">
-                                            @fat
-                                        </td>
-                                    </tr>
-                                    <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600 cursor-pointer">
-                                        <th scope="row" class="px-6 py-1 font-medium text-black whitespace-nowrap dark:text-white overflow-hidden text-ellipsis ">
-                                            2
-                                        </th>
-                                        <td class="px-6 py-1 overflow-hidden text-ellipsis ">
-                                            Jacob
-                                        </td>
-                                        <td class="px-6 py-1 overflow-hidden text-ellipsis ">
-                                            Thornton
-                                        </td>
-                                        <td class="px-6 py-1 overflow-hidden text-ellipsis ">
-                                            @fat
-                                        </td>
-                                    </tr>
-                                    <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600 cursor-pointer">
-                                        <th scope="row" class="px-6 py-1 font-medium text-black whitespace-nowrap dark:text-white overflow-hidden text-ellipsis ">
-                                            2
-                                        </th>
-                                        <td class="px-6 py-1 overflow-hidden text-ellipsis ">
-                                            Jacob
-                                        </td>
-                                        <td class="px-6 py-1 overflow-hidden text-ellipsis ">
-                                            Thornton
-                                        </td>
-                                        <td class="px-6 py-1 overflow-hidden text-ellipsis ">
-                                            @fat
-                                        </td>
-                                    </tr>
-                                    <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600 cursor-pointer">
-                                        <th scope="row" class="px-6 py-1 font-medium text-black whitespace-nowrap dark:text-white overflow-hidden text-ellipsis ">
-                                            2
-                                        </th>
-                                        <td class="px-6 py-1 overflow-hidden text-ellipsis ">
-                                            Jacob
-                                        </td>
-                                        <td class="px-6 py-1 overflow-hidden text-ellipsis ">
-                                            Thornton
-                                        </td>
-                                        <td class="px-6 py-1 overflow-hidden text-ellipsis ">
-                                            @fat
-                                        </td>
-                                    </tr>
-                                    <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600 cursor-pointer">
-                                        <th scope="row" class="px-6 py-1 font-medium text-black whitespace-nowrap dark:text-white overflow-hidden text-ellipsis ">
-                                            2
-                                        </th>
-                                        <td class="px-6 py-1 overflow-hidden text-ellipsis ">
-                                            Jacob
-                                        </td>
-                                        <td class="px-6 py-1 overflow-hidden text-ellipsis ">
-                                            Thornton
-                                        </td>
-                                        <td class="px-6 py-1 overflow-hidden text-ellipsis ">
-                                            @fat
-                                        </td>
-                                    </tr>
-                                    <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600 cursor-pointer">
-                                        <th scope="row" class="px-6 py-1 font-medium text-black whitespace-nowrap dark:text-white overflow-hidden text-ellipsis ">
-                                            2
-                                        </th>
-                                        <td class="px-6 py-1 overflow-hidden text-ellipsis ">
-                                            Jacob
-                                        </td>
-                                        <td class="px-6 py-1 overflow-hidden text-ellipsis ">
-                                            Thornton
-                                        </td>
-                                        <td class="px-6 py-1 overflow-hidden text-ellipsis ">
-                                            @fat
-                                        </td>
-                                    </tr>
-                                    <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600 cursor-pointer">
-                                        <th scope="row" class="px-6 py-1 font-medium text-black whitespace-nowrap dark:text-white overflow-hidden text-ellipsis ">
-                                            2
-                                        </th>
-                                        <td class="px-6 py-1 overflow-hidden text-ellipsis ">
-                                            Jacob
-                                        </td>
-                                        <td class="px-6 py-1 overflow-hidden text-ellipsis ">
-                                            Thornton
-                                        </td>
-                                        <td class="px-6 py-1 overflow-hidden text-ellipsis ">
-                                            @fat
-                                        </td>
-                                    </tr>
-                                    <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600 cursor-pointer">
-                                        <th scope="row" class="px-6 py-1 font-medium text-black whitespace-nowrap dark:text-white overflow-hidden text-ellipsis ">
-                                            2
-                                        </th>
-                                        <td class="px-6 py-1 overflow-hidden text-ellipsis ">
-                                            Jacob
-                                        </td>
-                                        <td class="px-6 py-1 overflow-hidden text-ellipsis ">
-                                            Thornton
-                                        </td>
-                                        <td class="px-6 py-1 overflow-hidden text-ellipsis ">
-                                            @fat
-                                        </td>
-                                    </tr>
-                                    <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600 cursor-pointer">
-                                        <th scope="row" class="px-6 py-1 font-medium text-black whitespace-nowrap dark:text-white overflow-hidden text-ellipsis ">
-                                            2
-                                        </th>
-                                        <td class="px-6 py-1 overflow-hidden text-ellipsis ">
-                                            Jacob
-                                        </td>
-                                        <td class="px-6 py-1 overflow-hidden text-ellipsis ">
-                                            Thornton
-                                        </td>
-                                        <td class="px-6 py-1 overflow-hidden text-ellipsis ">
-                                            @fat
-                                        </td>
-                                    </tr>
-                                    <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600 cursor-pointer">
-                                        <th scope="row" class="px-6 py-1 font-medium text-black whitespace-nowrap dark:text-white overflow-hidden text-ellipsis ">
-                                            2
-                                        </th>
-                                        <td class="px-6 py-1 overflow-hidden text-ellipsis ">
-                                            Jacob
-                                        </td>
-                                        <td class="px-6 py-1 overflow-hidden text-ellipsis ">
-                                            Thornton
-                                        </td>
-                                        <td class="px-6 py-1 overflow-hidden text-ellipsis ">
-                                            @fat
+                                        <td class="px-6 py-1 overflow-hidden text-ellipsis border-l-[0.5px] border-l-white-700 ">
+                                            CATEGORIES
                                         </td>
                                     </tr>
                                     <tr class="bg-white dark:bg-gray-800 hover:bg-gray-50 dark:hover:bg-gray-600 cursor-pointer">
                                         <th scope="row" class=" overflow-hidden text-ellipsis px-6 py-1 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                                            3
+                                            Pubilc
                                         </th>
-                                        <td class="px-6 py-1 overflow-hidden text-ellipsis ">
-                                            Larry
+                                        <td class="px-6 py-1 overflow-hidden text-ellipsis border-l-[0.5px] border-l-white-700 ">
+                                            0
                                         </td>
-                                        <td class="px-6 py-1 overflow-hidden text-ellipsis ">
-                                            Bird
+                                        <td class="px-6 py-1 overflow-hidden text-ellipsis border-l-[0.5px] border-l-white-700 ">
+                                            
                                         </td>
-                                        <td class="px-6 py-1 overflow-hidden text-ellipsis ">
-                                            @twitter
+                                    </tr>
+                                    <tr class="text-xs font-bold text-white uppercase bg-black dark:bg-gray-700 dark:text-gray-400">
+                                        <th scope="row" class="px-6 py-1 whitespace-nowrap dark:text-white overflow-hidden text-ellipsis ">
+                                            Raison sociale
+                                        </th>
+                                        <td class="px-6 py-1 overflow-hidden text-ellipsis border-l-[0.5px] border-l-white-700 ">
+                                            Adresse
+                                        </td>
+                                        <td class="px-6 py-1 overflow-hidden text-ellipsis border-l-[0.5px] border-l-white-700 ">
+                                            Code Fournisseur
+                                        </td>
+                                    </tr>
+                                    <tr class="bg-white dark:bg-gray-800 hover:bg-gray-50 dark:hover:bg-gray-600 cursor-pointer">
+                                        <th scope="row" class=" overflow-hidden text-ellipsis px-6 py-1 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                            Centre Sociale Sigem
+                                        </th>
+                                        <td class="px-6 py-1 overflow-hidden text-ellipsis border-l-[0.5px] border-l-white-700 ">
+                                            Cocody ||plateaux
+                                        </td>
+                                        <td class="px-6 py-1 overflow-hidden text-ellipsis border-l-[0.5px] border-l-white-700 ">
+                                            8562
+                                        </td>
+                                    </tr>
+                                    <tr class="text-xs font-bold text-white uppercase bg-black dark:bg-gray-700 dark:text-gray-400">
+                                        <th scope="row" class="px-6 py-1 whitespace-nowrap dark:text-white overflow-hidden text-ellipsis ">
+                                            Code Centre
+                                        </th>
+                                        <td class="px-6 py-1 overflow-hidden text-ellipsis border-l-[0.5px] border-l-white-700 ">
+                                            Boîte Postale
+                                        </td>
+                                        <td class="px-6 py-1 overflow-hidden text-ellipsis border-l-[0.5px] border-l-white-700 ">
+                                            Téléphone
+                                        </td>
+                                    </tr>
+                                    <tr class="bg-white dark:bg-gray-800 hover:bg-gray-50 dark:hover:bg-gray-600 cursor-pointer">
+                                        <th scope="row" class=" overflow-hidden text-ellipsis px-6 py-1 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                            4125
+                                        </th>
+                                        <td class="px-6 py-1 overflow-hidden text-ellipsis border-l-[0.5px] border-l-white-700 ">
+                                            21 BP Abidjan2024
+                                        </td>
+                                        <td class="px-6 py-1 overflow-hidden text-ellipsis border-l-[0.5px] border-l-white-700 ">
+                                            0101020548
+                                        </td>
+                                    </tr>
+                                    <tr class="text-xs font-bold text-white uppercase bg-black dark:bg-gray-700 dark:text-gray-400">
+                                        <th scope="row" class="px-6 py-1 whitespace-nowrap dark:text-white overflow-hidden text-ellipsis ">
+                                            Email
+                                        </th>
+                                        <td class="px-6 py-1 overflow-hidden text-ellipsis border-l-[0.5px] border-l-white-700 ">
+                                            Responsable
+                                        </td>
+                                        <td class="px-6 py-1 overflow-hidden text-ellipsis border-l-[0.5px] border-l-white-700 ">
+                                            mobile
+                                        </td>
+                                    </tr>
+                                    <tr class="bg-white dark:bg-gray-800 hover:bg-gray-50 dark:hover:bg-gray-600 cursor-pointer">
+                                        <th scope="row" class=" overflow-hidden text-ellipsis px-6 py-1 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                            info@sy.com
+                                        </th>
+                                        <td class="px-6 py-1 overflow-hidden text-ellipsis border-l-[0.5px] border-l-white-700 ">
+                                            Coulibaly G
+                                        </td>
+                                        <td class="px-6 py-1 overflow-hidden text-ellipsis border-l-[0.5px] border-l-white-700 ">
+                                            0709020548
+                                        </td>
+                                    </tr>
+                                    <tr class="text-xs font-bold text-white uppercase bg-black dark:bg-gray-700 dark:text-gray-400">
+                                        <th scope="row" class="px-6 py-1 whitespace-nowrap dark:text-white overflow-hidden text-ellipsis ">
+                                            Activation
+                                        </th>
+                                        <td class="px-6 py-1 overflow-hidden text-ellipsis border-l-[0.5px] border-l-white-700 ">
+                                            Date de Création
+                                        </td>
+                                        <td class="px-6 py-1 overflow-hidden text-ellipsis border-l-[0.5px] border-l-white-700 ">
+                                            
+                                        </td>
+                                    </tr>
+                                    <tr class="bg-white dark:bg-gray-800 hover:bg-gray-50 dark:hover:bg-gray-600 cursor-pointer">
+                                        <th scope="row" class=" overflow-hidden text-ellipsis px-6 py-1 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                            oui
+                                        </th>
+                                        <td class="px-6 py-1 overflow-hidden text-ellipsis border-l-[0.5px] border-l-white-700 ">
+                                            11/04/20 11:30
+                                        </td>
+                                        <td class="px-6 py-1 overflow-hidden text-ellipsis border-l-[0.5px] border-l-white-700 ">
+                                            
                                         </td>
                                     </tr>
                                 </tbody>
                             </table>
                         </div>
-                        <div class="flex mr-auto justify-center">
-                            <div class="justify-center mt-5 border-[0.5px] border-black items-center p-2 w-fit rounded-l-lg text-gray-400 cursor-not-allowed"><i class="fa-solid fa-angles-left"></i></div>
-                            <div class="justify-center mt-5 border-[0.5px] border-black items-center p-2 w-fit text-gray-400 cursor-not-allowed"><i class="fa-solid fa-angle-left"></i></div>
-                            <div class="justify-center mt-5 border-[0.5px] border-black items-center p-2 w-[30px] cursor-pointer font-bold text-white bg-black">1</div>
-                            <div class="justify-center mt-5 border-[0.5px] border-black items-center p-2 w-[30px] cursor-pointer hover:text-white hover:bg-black">2</div>
-                            <div class="justify-center mt-5 border-[0.5px] border-black items-center p-2 w-[30px] cursor-pointer hover:text-white hover:bg-black">3</div>
-                            <div class="justify-center mt-5 border-[0.5px] border-black items-center p-2 w-[30px] cursor-pointer hover:text-white hover:bg-black">4</div>
-                            <div class="justify-center mt-5 border-[0.5px] border-black items-center p-2 w-fit cursor-pointer hover:text-white hover:bg-black"><i class="fa-solid fa-angle-right"></i></div>
-                            <div class="justify-center mt-5 border-[0.5px] border-black items-center p-2 w-fit rounded-r-lg cursor-pointer hover:text-white hover:bg-black"><i class="fa-solid fa-angles-right"></i></div>
+                        <div class="flex gap-5 my-2 justify-center md:justify-end">
+                            <button class="bg-green-500 p-2 text-white rounded-lg w-fit">Modifier</button>
+                            <button class="bg-red-500 p-2 text-white rounded-lg w-fit">Supprimer</button>
                         </div>
-                    </div>
+                        <section class="flex flex-row flex-wrap mt-10">
+    
+                            <input id="tab-one" type="radio" name="tabs" class="peer/tab-one opacity-0 absolute" checked />
+                            <label for="tab-one" class="peer-checked/tab-one:bg-black peer-checked/tab-one:text-white transition-all duration-200 cursor-pointer p-4 block">
+                              Practiciens
+                            </label>
+                          
+                            <input id="tab-two" type="radio" name="tabs" class="peer/tab-two opacity-0 absolute" />
+                            <label for="tab-two" class=" peer-checked/tab-two:bg-black peer-checked/tab-two:text-white transition-all duration-75 cursor-pointer p-4 block">
+                              Actes Médicaux
+                            </label>
+                          
+                            <!-- <div class="basis-full h-0"></div> -->
+                            <div class="w-full bg-black h-[1px]"></div>
+                            <div class="hidden peer-checked/tab-one:block w-full">
+                                <div class="overflow-x-auto border-[0.5px] border-black my-1">
+                                    <table class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400 cursor-pointer">
+                                        <thead class="text-xs text-white uppercase bg-black p-2">
+                                            <tr>
+                                                <th scope="col" class="px-6 py-2 lg:text-[14px]">
+                                                    ID POOL MEDICAL
+                                                </th>
+                                                <th scope="col" class="px-6 py-2 lg:text-[14px] border-l-[0.5px] border-l-white-700">
+                                                    ID PRACTICIEN
+                                                </th>
+                                                <th scope="col" class="px-6 py-2 lg:text-[14px] border-l-[0.5px] border-l-white-700">
+                                                    NOM ET PRENOMS 
+                                                </th>
+                                                <th scope="col" class="px-6 py-2 lg:text-[14px] border-l-[0.5px] border-l-white-700">
+                                                    ACTIVATION
+                                                </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600 cursor-pointer">
+                                                <th scope="row" class=" overflow-hidden text-ellipsis px-6 py-1 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                                    1
+                                                </th>
+                                                <td class="px-6 py-1 overflow-hidden text-ellipsis border-l-[0.5px] border-l-white-700 ">
+                                                    Mark
+                                                </td>
+                                                <td class="px-6 py-1 overflow-hidden text-ellipsis border-l-[0.5px] border-l-white-700 ">
+                                                    Otto
+                                                </td>
+                                                <td class="px-6 py-1 overflow-hidden text-ellipsis border-l-[0.5px] border-l-white-700 ">
+                                                    @mdo
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="flex gap-5 my-2 justify-center md:justify-end">
+                                    <button class="bg-green-500 p-2 text-white rounded-lg w-fit">Ajouter un practicien</button>
+                                </div>
+                            </div>
+                            <div class="hidden peer-checked/tab-two:block p-1 w-full">
+                              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non adipisci magnam possimus modi consectetur obcaecati ullam odit nisi sapiente delectus id aliquid aut consequatur soluta consequuntur dignissimos repudiandae, quod ea et ad! Quidem earum nulla accusamus consequuntur.
+                            </div>
+                          
+                          </section>
                     </div>
                 </div>
              </div>
@@ -847,6 +831,6 @@
     <script defer src="https://cdn.jsdelivr.net/npm/@alpinejs/focus@3.x.x/dist/cdn.min.js"></script>
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
-    <script src="../assets/js/script.js"></script>
+    <script src="./src/assets/js/script.js"></script>
 </body>
 </html>

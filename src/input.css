@@ -33,3 +33,9 @@ body::-webkit-scrollbar-thumb {
   transition: all 2s ease-in-out;
   display: flex;
 }
+
+@-moz-document url-prefix(){
+  #type,#countries{
+      
+  }
+}
