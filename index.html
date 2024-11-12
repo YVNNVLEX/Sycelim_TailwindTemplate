@@ -8,7 +8,7 @@
 </head>
 <body class="flex flex-col bg-gray-200 p-1 max-h-full font-montserrat mt-1 mx-1">
     <div>
-        <div class="w-full flex items-center h-13 bg-white rounded-[10px] px-2 py-5 ">
+        <div class="w-full flex items-center h-13 bg-white rounded-[10px] px-[14px] py-5 ">
             <img src="./src/assets/image/logo.png" alt="logo" class="mr-auto w-[100px] md:full">
             <div class="ml-auto flex gap-5 items-center justify-center">
                 <div class="rounded-full bg-black hover:bg-white hover:text-black text-white p-2 cursor-pointer w-[40px] h-[40px] flex justify-center items-center transition-all ease-in-out duration-300 hover:border-2 hover:border-black">
@@ -43,7 +43,7 @@
         </div>
     </div>
     <div class="flex w-full mr-1">
-        <div :class="isactive ? 'h-16' : 'h-0' " class="hidden md:flex p-2 mt-2 mr-2 md:h-full transition-all ease-in-out duration-100 rounded-[10px] bg-white h-2 overflow-hidden md:w-60 flex-col ">
+        <div :class="isactive ? 'h-16' : 'h-0' " class="hidden md:flex p-4 mt-2 mr-2 md:h-full transition-all ease-in-out duration-100 rounded-[10px] bg-white h-2 overflow-hidden md:w-[17rem] flex-col ">
             <main class="min-h-screen flex flex-col overflow-hidden w-full ">
                 <div class="divide-y divide-slate-200">
                     <div x-data="{ expanded: false }">
@@ -71,10 +71,10 @@
                             :class="expanded ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'"
                         >
                             <ul class="overflow-hidden">
-                                <li class="ml-5 p-1 hover:bg-gray-300 cursor-pointer rounded-[5px]"><a href="">Motifs</a></li>
-                                <li class="ml-5 p-1 hover:bg-gray-300 cursor-pointer rounded-[5px]"><a href="">Posologies</a></li>
-                                <li class="ml-5 p-1 hover:bg-gray-300 cursor-pointer rounded-[5px]"><a href="">Localités</a></li>
-                                <li class="ml-5 p-1 hover:bg-gray-300 cursor-pointer rounded-[5px]"><a href="">Rubriques</a></li>
+                                <li class="ml-[1rem] p-1 hover:bg-gray-300 cursor-pointer rounded-[5px]"><a class="pl-[0.25rem]" href="./src/pages/prestataires.html">prestataires</a></li>
+                                <li class="ml-[1rem] p-1 hover:bg-gray-300 cursor-pointer rounded-[5px]"><a class="pl-[0.25rem]" href="">Posologies</a></li>
+                                <li class="ml-[1rem] p-1 hover:bg-gray-300 cursor-pointer rounded-[5px]"><a class="pl-[0.25rem]" href="">Localités</a></li>
+                                <li class="ml-[1rem] p-1 hover:bg-gray-300 cursor-pointer rounded-[5px]"><a class="pl-[0.25rem]" href="">Rubriques</a></li>
                             </ul>
                         </div>
                     </div>                                                                                              
@@ -106,10 +106,10 @@
                             :class="expanded ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'"
                         >
                             <ul class="overflow-hidden">
-                                <li class="ml-5 p-1 hover:bg-gray-300 cursor-pointer rounded-[5px]"><a href="">Motifs</a></li>
-                                <li class="ml-5 p-1 hover:bg-gray-300 cursor-pointer rounded-[5px]"><a href="">Posologies</a></li>
-                                <li class="ml-5 p-1 hover:bg-gray-300 cursor-pointer rounded-[5px]"><a href="">Localités</a></li>
-                                <li class="ml-5 p-1 hover:bg-gray-300 cursor-pointer rounded-[5px]"><a href="">Rubriques</a></li>
+                                <li class="ml-[1rem] p-1 hover:bg-gray-300 cursor-pointer rounded-[5px]"><a class="pl-[0.25rem]" href="">Motifs</a></li>
+                                <li class="ml-[1rem] p-1 hover:bg-gray-300 cursor-pointer rounded-[5px]"><a class="pl-[0.25rem]" href="">Posologies</a></li>
+                                <li class="ml-[1rem] p-1 hover:bg-gray-300 cursor-pointer rounded-[5px]"><a class="pl-[0.25rem]" href="">Localités</a></li>
+                                <li class="ml-[1rem] p-1 hover:bg-gray-300 cursor-pointer rounded-[5px]"><a class="pl-[0.25rem]" href="">Rubriques</a></li>
                             </ul>
                         </div>
                     </div>                                                                                              
@@ -141,10 +141,10 @@
                             :class="expanded ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'"
                         >
                             <ul class="overflow-hidden">
-                                <li class="ml-5 p-1 hover:bg-gray-300 cursor-pointer rounded-[5px]"><a href="">Motifs</a></li>
-                                <li class="ml-5 p-1 hover:bg-gray-300 cursor-pointer rounded-[5px]"><a href="">Posologies</a></li>
-                                <li class="ml-5 p-1 hover:bg-gray-300 cursor-pointer rounded-[5px]"><a href="">Localités</a></li>
-                                <li class="ml-5 p-1 hover:bg-gray-300 cursor-pointer rounded-[5px]"><a href="">Rubriques</a></li>
+                                <li class="ml-[1rem] p-1 hover:bg-gray-300 cursor-pointer rounded-[5px]"><a class="pl-[0.25rem]" href="">Motifs</a></li>
+                                <li class="ml-[1rem] p-1 hover:bg-gray-300 cursor-pointer rounded-[5px]"><a class="pl-[0.25rem]" href="">Posologies</a></li>
+                                <li class="ml-[1rem] p-1 hover:bg-gray-300 cursor-pointer rounded-[5px]"><a class="pl-[0.25rem]" href="">Localités</a></li>
+                                <li class="ml-[1rem] p-1 hover:bg-gray-300 cursor-pointer rounded-[5px]"><a class="pl-[0.25rem]" href="">Rubriques</a></li>
                             </ul>
                         </div>
                     </div>                                                                                              
@@ -176,10 +176,10 @@
                             :class="expanded ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'"
                         >
                             <ul class="overflow-hidden">
-                                <li class="ml-5 p-1 hover:bg-gray-300 cursor-pointer rounded-[5px]"><a href="">Motifs</a></li>
-                                <li class="ml-5 p-1 hover:bg-gray-300 cursor-pointer rounded-[5px]"><a href="">Posologies</a></li>
-                                <li class="ml-5 p-1 hover:bg-gray-300 cursor-pointer rounded-[5px]"><a href="">Localités</a></li>
-                                <li class="ml-5 p-1 hover:bg-gray-300 cursor-pointer rounded-[5px]"><a href="">Rubriques</a></li>
+                                <li class="ml-[1rem] p-1 hover:bg-gray-300 cursor-pointer rounded-[5px]"><a class="pl-[0.25rem]" href="">Motifs</a></li>
+                                <li class="ml-[1rem] p-1 hover:bg-gray-300 cursor-pointer rounded-[5px]"><a class="pl-[0.25rem]" href="">Posologies</a></li>
+                                <li class="ml-[1rem] p-1 hover:bg-gray-300 cursor-pointer rounded-[5px]"><a class="pl-[0.25rem]" href="">Localités</a></li>
+                                <li class="ml-[1rem] p-1 hover:bg-gray-300 cursor-pointer rounded-[5px]"><a class="pl-[0.25rem]" href="">Rubriques</a></li>
                             </ul>
                         </div>
                     </div>                                                                                              
@@ -211,10 +211,10 @@
                             :class="expanded ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'"
                         >
                             <ul class="overflow-hidden">
-                                <li class="ml-5 p-1 hover:bg-gray-300 cursor-pointer rounded-[5px]"><a href="">Motifs</a></li>
-                                <li class="ml-5 p-1 hover:bg-gray-300 cursor-pointer rounded-[5px]"><a href="">Posologies</a></li>
-                                <li class="ml-5 p-1 hover:bg-gray-300 cursor-pointer rounded-[5px]"><a href="">Localités</a></li>
-                                <li class="ml-5 p-1 hover:bg-gray-300 cursor-pointer rounded-[5px]"><a href="">Rubriques</a></li>
+                                <li class="ml-[1rem] p-1 hover:bg-gray-300 cursor-pointer rounded-[5px]"><a class="pl-[0.25rem]" href="">Motifs</a></li>
+                                <li class="ml-[1rem] p-1 hover:bg-gray-300 cursor-pointer rounded-[5px]"><a class="pl-[0.25rem]" href="">Posologies</a></li>
+                                <li class="ml-[1rem] p-1 hover:bg-gray-300 cursor-pointer rounded-[5px]"><a class="pl-[0.25rem]" href="">Localités</a></li>
+                                <li class="ml-[1rem] p-1 hover:bg-gray-300 cursor-pointer rounded-[5px]"><a class="pl-[0.25rem]" href="">Rubriques</a></li>
                             </ul>
                         </div>
                     </div>                                                                                              
@@ -246,10 +246,10 @@
                             :class="expanded ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'"
                         >
                             <ul class="overflow-hidden">
-                                <li class="ml-5 p-1 hover:bg-gray-300 cursor-pointer rounded-[5px]"><a href="">Motifs</a></li>
-                                <li class="ml-5 p-1 hover:bg-gray-300 cursor-pointer rounded-[5px]"><a href="">Posologies</a></li>
-                                <li class="ml-5 p-1 hover:bg-gray-300 cursor-pointer rounded-[5px]"><a href="">Localités</a></li>
-                                <li class="ml-5 p-1 hover:bg-gray-300 cursor-pointer rounded-[5px]"><a href="">Rubriques</a></li>
+                                <li class="ml-[1rem] p-1 hover:bg-gray-300 cursor-pointer rounded-[5px]"><a class="pl-[0.25rem]" href="">Motifs</a></li>
+                                <li class="ml-[1rem] p-1 hover:bg-gray-300 cursor-pointer rounded-[5px]"><a class="pl-[0.25rem]" href="">Posologies</a></li>
+                                <li class="ml-[1rem] p-1 hover:bg-gray-300 cursor-pointer rounded-[5px]"><a class="pl-[0.25rem]" href="">Localités</a></li>
+                                <li class="ml-[1rem] p-1 hover:bg-gray-300 cursor-pointer rounded-[5px]"><a class="pl-[0.25rem]" href="">Rubriques</a></li>
                             </ul>
                         </div>
                     </div>                                                                                              
@@ -281,10 +281,10 @@
                             :class="expanded ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'"
                         >
                             <ul class="overflow-hidden">
-                                <li class="ml-5 p-1 hover:bg-gray-300 cursor-pointer rounded-[5px]"><a href="">Motifs</a></li>
-                                <li class="ml-5 p-1 hover:bg-gray-300 cursor-pointer rounded-[5px]"><a href="">Posologies</a></li>
-                                <li class="ml-5 p-1 hover:bg-gray-300 cursor-pointer rounded-[5px]"><a href="">Localités</a></li>
-                                <li class="ml-5 p-1 hover:bg-gray-300 cursor-pointer rounded-[5px]"><a href="">Rubriques</a></li>
+                                <li class="ml-[1rem] p-1 hover:bg-gray-300 cursor-pointer rounded-[5px]"><a class="pl-[0.25rem]" href="">Motifs</a></li>
+                                <li class="ml-[1rem] p-1 hover:bg-gray-300 cursor-pointer rounded-[5px]"><a class="pl-[0.25rem]" href="">Posologies</a></li>
+                                <li class="ml-[1rem] p-1 hover:bg-gray-300 cursor-pointer rounded-[5px]"><a class="pl-[0.25rem]" href="">Localités</a></li>
+                                <li class="ml-[1rem] p-1 hover:bg-gray-300 cursor-pointer rounded-[5px]"><a class="pl-[0.25rem]" href="">Rubriques</a></li>
                             </ul>
                         </div>
                     </div>                                                                                              
@@ -316,10 +316,10 @@
                             :class="expanded ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'"
                         >
                             <ul class="overflow-hidden">
-                                <li class="ml-5 p-1 hover:bg-gray-300 cursor-pointer rounded-[5px]"><a href="">Motifs</a></li>
-                                <li class="ml-5 p-1 hover:bg-gray-300 cursor-pointer rounded-[5px]"><a href="">Posologies</a></li>
-                                <li class="ml-5 p-1 hover:bg-gray-300 cursor-pointer rounded-[5px]"><a href="">Localités</a></li>
-                                <li class="ml-5 p-1 hover:bg-gray-300 cursor-pointer rounded-[5px]"><a href="">Rubriques</a></li>
+                                <li class="ml-[1rem] p-1 hover:bg-gray-300 cursor-pointer rounded-[5px]"><a class="pl-[0.25rem]" href="">Motifs</a></li>
+                                <li class="ml-[1rem] p-1 hover:bg-gray-300 cursor-pointer rounded-[5px]"><a class="pl-[0.25rem]" href="">Posologies</a></li>
+                                <li class="ml-[1rem] p-1 hover:bg-gray-300 cursor-pointer rounded-[5px]"><a class="pl-[0.25rem]" href="">Localités</a></li>
+                                <li class="ml-[1rem] p-1 hover:bg-gray-300 cursor-pointer rounded-[5px]"><a class="pl-[0.25rem]" href="">Rubriques</a></li>
                             </ul>
                         </div>
                     </div>                                                                                              
@@ -609,85 +609,85 @@
                         </div>                                                                                              
                     </div> 
         </div>
-            <div class="w-full h-fit bg-white rounded-[10px] px-2 py-5 mt-2 " id="body">
+            <div class="w-full h-fit bg-white rounded-[10px] p-[14px] mt-2 " id="body">
                 <div class="flex items-center justify-center">
-                    <h1 class="font-bold text-xl">PARAMETRAGES</h1>
+                    <h1 class="font-bold text-base md:text-xl">PARAMETRAGES</h1>
                     <div class="flex ml-auto items-center justify-center">
-                        <i class="fa-solid fa-magnifying-glass translate-x-5"></i>
+                        <i class="fa-solid fa-magnifying-glass md:translate-x-7 translate-x-[2.5rem] ml-auto"></i>
                         <input type="text" name="" id="" placeholder="Rechercher..."
-                        class="h-10 border-2 border-black rounded-full focus:ring-2 pl-6 ouline-none"
+                        class="h-8 w-10/12 md:w-full ml-auto border-2 border-black rounded-full focus:outline-none focus:border-blue-500 transition-all ease-in-out duration-300 pl-8 ouline-none"
                         >
                     </div>
                 </div>
                 <div>
-                    <div class="border-[1.5px] border-black p-2 rounded-[10px] mt-5">
+                    <div class="border-[1.5px] border-black p-[14px] rounded-[10px] mt-5">
                         <div class="flex items-center">
                             <h2 class="text-lg">Liste des Prestataires</h2>
                             <a href="./src/pages/addRubriques.html" class="flex font-semibold rounded-lg ml-auto items-center 
-                            justify-center gap-2 border-2 p-1 border-black bg-black text-white">
+                            justify-center gap-2 border-2 py-1 px-[15px] border-black bg-black text-white">
                                 <span class="text-xs">Ajouter</span>
                                 <i class="fa-solid fa-plus"></i>
                             </a>
                         </div>
                         <hr class="mt-2">
-                        <div class="overflow-x-auto mt-5 border-2 border-black">
+                        <div class="overflow-x-auto mt-5 border-[0.5px] border-black">
                             <table class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400 cursor-pointer">
                                 <thead class="text-xs text-white uppercase bg-black dark:bg-gray-700 dark:text-gray-400">
                                     <tr>
-                                        <th scope="col" class="px-6 py-2 lg:text-[14px]">
+                                        <th scope="col" class="px-1 py-2 lg:text-[14px]">
                                             ID POOL MEDICAL
                                         </th>
-                                        <th scope="col" class="px-6 py-2 lg:text-[14px]">
+                                        <th scope="col" class="px-1 py-2 lg:text-[14px] border-l-[0.5px] border-l-white-700">
                                             ID PRACTICIEN
                                         </th>
-                                        <th scope="col" class="px-6 py-2 lg:text-[14px]">
+                                        <th scope="col" class="px-1 py-2 lg:text-[14px] border-l-[0.5px] border-l-white-700">
                                             NOM ET PRENOMS 
                                         </th>
-                                        <th scope="col" class="px-6 py-2 lg:text-[14px]">
+                                        <th scope="col" class="px-1 py-2 lg:text-[14px] border-l-[0.5px] border-l-white-700">
                                             ACTIVATION
                                         </th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600 cursor-pointer">
-                                        <th scope="row" class=" overflow-hidden text-ellipsis px-6 py-1 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                        <th scope="row" class=" overflow-hidden text-ellipsis px-1 py-1 font-medium text-gray-900 whitespace-nowrap dark:text-white">
                                             1
                                         </th>
-                                        <td class="px-6 py-1 overflow-hidden text-ellipsis ">
+                                        <td class="px-1 py-1 overflow-hidden text-ellipsis border-l-[0.5px] border-l-white-700 ">
                                             Mark
                                         </td>
-                                        <td class="px-6 py-1 overflow-hidden text-ellipsis ">
+                                        <td class="px-1 py-1 overflow-hidden text-ellipsis border-l-[0.5px] border-l-white-700 ">
                                             Otto
                                         </td>
-                                        <td class="px-6 py-1 overflow-hidden text-ellipsis ">
+                                        <td class="px-1 py-1 overflow-hidden text-ellipsis border-l-[0.5px] border-l-white-700 ">
                                             @mdo
                                         </td>
                                     </tr>
                                     <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600 cursor-pointer">
-                                        <th scope="row" class="px-6 py-1 font-medium text-black whitespace-nowrap dark:text-white overflow-hidden text-ellipsis ">
+                                        <th scope="row" class="px-1 py-1 font-medium text-black whitespace-nowrap dark:text-white overflow-hidden text-ellipsis ">
                                             2
                                         </th>
-                                        <td class="px-6 py-1 overflow-hidden text-ellipsis ">
+                                        <td class="px-1 py-1 overflow-hidden text-ellipsis border-l-[0.5px] border-l-white-700 ">
                                             Jacob
                                         </td>
-                                        <td class="px-6 py-1 overflow-hidden text-ellipsis ">
+                                        <td class="px-1 py-1 overflow-hidden text-ellipsis border-l-[0.5px] border-l-white-700 ">
                                             Thornton
                                         </td>
-                                        <td class="px-6 py-1 overflow-hidden text-ellipsis ">
+                                        <td class="px-1 py-1 overflow-hidden text-ellipsis border-l-[0.5px] border-l-white-700 ">
                                             @fat
                                         </td>
                                     </tr>
                                     <tr class="bg-white dark:bg-gray-800 hover:bg-gray-50 dark:hover:bg-gray-600 cursor-pointer">
-                                        <th scope="row" class=" overflow-hidden text-ellipsis px-6 py-1 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                        <th scope="row" class=" overflow-hidden text-ellipsis px-1 py-1 font-medium text-gray-900 whitespace-nowrap dark:text-white">
                                             3
                                         </th>
-                                        <td class="px-6 py-1 overflow-hidden text-ellipsis ">
+                                        <td class="px-1 py-1 overflow-hidden text-ellipsis border-l-[0.5px] border-l-white-700 ">
                                             Larry
                                         </td>
-                                        <td class="px-6 py-1 overflow-hidden text-ellipsis ">
+                                        <td class="px-1 py-1 overflow-hidden text-ellipsis border-l-[0.5px] border-l-white-700 ">
                                             Bird
                                         </td>
-                                        <td class="px-6 py-1 overflow-hidden text-ellipsis ">
+                                        <td class="px-1 py-1 overflow-hidden text-ellipsis border-l-[0.5px] border-l-white-700 ">
                                             @twitter
                                         </td>
                                     </tr>
@@ -695,95 +695,96 @@
                             </table>
                         </div>
                         <div class="flex flex-row">
-                            <div class="flex mr-auto items-center gap-3 mt-2">
-                                <span>Nombre de ligne</span>
-                                <select id="countries" class="bg-gray-50 border w-16 focus:ring-2 focus:ring-blue-600 items-center border-gray-300 text-gray-900 text-sm rounded-lg p-2 ">
+                            <div class="flex mr-auto items-center gap-1 md:gap-3 mt-2">
+                                <span class="text-xs md:text-base">Nombre de ligne</span>
+                                <select id="countries" class="bg-gray-50 border w-20 focus:ring-2 focus:ring-blue-600 outline-none text-center items-center border-gray-300 text-gray-900 text-sm rounded-lg py-2 p-1 firefox-centered">
                                     <option selected>20</option>
-                                    <option value="US">50</option>
-                                    <option value="CA">100</option>
+                                    <option value="50">50</option>
+                                    <option value="100">100</option>
                                 </select>
                             </div>
+                            
                             <div class="flex justify-center mb-3 ml-auto">
-                                <div class="justify-center mt-5 border-[0.5px] border-black items-center p-1 w-fit rounded-l-lg text-gray-400 cursor-not-allowed"><i class="fa-solid fa-angles-left"></i></div>
-                                <div class="justify-center mt-5 border-[0.5px] border-black items-center p-1 w-fit text-gray-400 cursor-not-allowed"><i class="fa-solid fa-angle-left"></i></div>
-                                <div class="justify-center mt-5 border-[0.5px] border-black items-center p-1 min-w-fit cursor-pointer font-bold text-white bg-black flex gap-1"> <span>1</span> à <span>1</span> sur <span>1</span></div>
-                                <div class="justify-center mt-5 border-[0.5px] border-black items-center p-1 w-fit cursor-pointer hover:text-white hover:bg-black"><i class="fa-solid fa-angle-right"></i></div>
-                                <div class="justify-center mt-5 border-[0.5px] border-black items-center p-1 w-fit rounded-r-lg cursor-pointer hover:text-white hover:bg-black"><i class="fa-solid fa-angles-right"></i></div>
+                                <div class="justify-center mt-5 border-[0.5px] border-black items-center w-fit rounded-l-lg text-gray-400 cursor-not-allowed"><i class="fa-solid fa-angles-left"></i></div>
+                                <div class="justify-center mt-5 border-[0.5px] border-black items-center px-1 w-fit text-gray-400 cursor-not-allowed"><i class="fa-solid fa-angle-left"></i></div>
+                                <div class="justify-center mt-5 border-[0.5px] border-black items-center px-1 min-w-fit cursor-pointer text-xs text-white bg-black flex gap-1"> <span>1</span> à <span>1</span> sur <span>1</span></div>
+                                <div class="justify-center mt-5 border-[0.5px] border-black items-center px-1 w-fit cursor-pointer hover:text-white hover:bg-black"><i class="fa-solid fa-angle-right"></i></div>
+                                <div class="justify-center mt-5 border-[0.5px] border-black items-center px-[0.2px] w-fit rounded-r-lg cursor-pointer hover:text-white hover:bg-black"><i class="fa-solid fa-angles-right"></i></div>
                             </div>
                         </div>
                         <section class="flex flex-row flex-wrap mt-10">
     
                             <input id="tab-one" type="radio" name="tabs" class="peer/tab-one opacity-0 absolute" checked />
-                            <label for="tab-one" class="bg-gray-500 text-white peer-checked/tab-one:bg-black transition-all duration-200 cursor-pointer p-4 block">
+                            <label for="tab-one" class="peer-checked/tab-one:bg-black peer-checked/tab-one:text-white transition-all duration-200 cursor-pointer p-4 block">
                               Practiciens
                             </label>
                           
                             <input id="tab-two" type="radio" name="tabs" class="peer/tab-two opacity-0 absolute" />
-                            <label for="tab-two" class="bg-gray-500 text-white peer-checked/tab-two:bg-black transition-all duration-75 cursor-pointer p-4 block">
+                            <label for="tab-two" class=" peer-checked/tab-two:bg-black peer-checked/tab-two:text-white transition-all duration-75 cursor-pointer p-4 block">
                               Actes Médicaux
                             </label>
                           
                             <!-- <div class="basis-full h-0"></div> -->
-                          
+                            <div class="w-full bg-black h-[1px]"></div>
                             <div class="hidden peer-checked/tab-one:block w-full">
-                                <div class="overflow-x-auto border-2 border-black my-2">
+                                <div class="overflow-x-auto border-[0.5px] border-black my-1">
                                     <table class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400 cursor-pointer">
-                                        <thead class="text-xs text-white uppercase bg-black dark:bg-gray-700 dark:text-gray-400 p-2">
+                                        <thead class="text-xs text-white uppercase bg-black p-2">
                                             <tr>
-                                                <th scope="col" class="px-6 py-2 lg:text-[14px]">
+                                                <th scope="col" class="px-1 py-2 lg:text-[14px]">
                                                     ID POOL MEDICAL
                                                 </th>
-                                                <th scope="col" class="px-6 py-2 lg:text-[14px]">
+                                                <th scope="col" class="px-1 py-2 lg:text-[14px] border-l-[0.5px] border-l-white-700">
                                                     ID PRACTICIEN
                                                 </th>
-                                                <th scope="col" class="px-6 py-2 lg:text-[14px]">
+                                                <th scope="col" class="px-1 py-2 lg:text-[14px] border-l-[0.5px] border-l-white-700">
                                                     NOM ET PRENOMS 
                                                 </th>
-                                                <th scope="col" class="px-6 py-2 lg:text-[14px]">
+                                                <th scope="col" class="px-1 py-2 lg:text-[14px] border-l-[0.5px] border-l-white-700">
                                                     ACTIVATION
                                                 </th>
                                             </tr>
                                         </thead>
                                         <tbody>
                                             <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600 cursor-pointer">
-                                                <th scope="row" class=" overflow-hidden text-ellipsis px-6 py-1 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                                <th scope="row" class=" overflow-hidden text-ellipsis px-1 py-1 font-medium text-gray-900 whitespace-nowrap dark:text-white">
                                                     1
                                                 </th>
-                                                <td class="px-6 py-1 overflow-hidden text-ellipsis ">
+                                                <td class="px-1 py-1 overflow-hidden text-ellipsis border-l-[0.5px] border-l-white-700 ">
                                                     Mark
                                                 </td>
-                                                <td class="px-6 py-1 overflow-hidden text-ellipsis ">
+                                                <td class="px-1 py-1 overflow-hidden text-ellipsis border-l-[0.5px] border-l-white-700 ">
                                                     Otto
                                                 </td>
-                                                <td class="px-6 py-1 overflow-hidden text-ellipsis ">
+                                                <td class="px-1 py-1 overflow-hidden text-ellipsis border-l-[0.5px] border-l-white-700 ">
                                                     @mdo
                                                 </td>
                                             </tr>
                                             <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600 cursor-pointer">
-                                                <th scope="row" class="px-6 py-1 font-medium text-black whitespace-nowrap dark:text-white overflow-hidden text-ellipsis ">
+                                                <th scope="row" class="px-1 py-1 font-medium text-black whitespace-nowrap dark:text-white overflow-hidden text-ellipsis ">
                                                     2
                                                 </th>
-                                                <td class="px-6 py-1 overflow-hidden text-ellipsis ">
+                                                <td class="px-1 py-1 overflow-hidden text-ellipsis border-l-[0.5px] border-l-white-700 ">
                                                     Jacob
                                                 </td>
-                                                <td class="px-6 py-1 overflow-hidden text-ellipsis ">
+                                                <td class="px-1 py-1 overflow-hidden text-ellipsis border-l-[0.5px] border-l-white-700 ">
                                                     Thornton
                                                 </td>
-                                                <td class="px-6 py-1 overflow-hidden text-ellipsis ">
+                                                <td class="px-1 py-1 overflow-hidden text-ellipsis border-l-[0.5px] border-l-white-700 ">
                                                     @fat
                                                 </td>
                                             </tr>
                                             <tr class="bg-white dark:bg-gray-800 hover:bg-gray-50 dark:hover:bg-gray-600 cursor-pointer">
-                                                <th scope="row" class=" overflow-hidden text-ellipsis px-6 py-1 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                                <th scope="row" class=" overflow-hidden text-ellipsis px-1 py-1 font-medium text-gray-900 whitespace-nowrap dark:text-white">
                                                     3
                                                 </th>
-                                                <td class="px-6 py-1 overflow-hidden text-ellipsis ">
+                                                <td class="px-1 py-1 overflow-hidden text-ellipsis border-l-[0.5px] border-l-white-700 ">
                                                     Larry
                                                 </td>
-                                                <td class="px-6 py-1 overflow-hidden text-ellipsis ">
+                                                <td class="px-1 py-1 overflow-hidden text-ellipsis border-l-[0.5px] border-l-white-700 ">
                                                     Bird
                                                 </td>
-                                                <td class="px-6 py-1 overflow-hidden text-ellipsis ">
+                                                <td class="px-1 py-1 overflow-hidden text-ellipsis border-l-[0.5px] border-l-white-700 ">
                                                     @twitter
                                                 </td>
                                             </tr>
@@ -791,24 +792,25 @@
                                     </table>
                                 </div>
                                 <div class="flex flex-row">
-                                    <div class="flex mr-auto items-center gap-3 mt-2">
-                                        <span>Nombre de ligne</span>
-                                        <select id="countries" class="bg-gray-50 border w-16 focus:ring-2 focus:ring-blue-600 items-center border-gray-300 text-gray-900 text-sm rounded-lg p-2 ">
+                                    <div class="flex mr-auto items-center gap-1 md:gap-3 mt-2">
+                                        <span class="text-xs md:text-base">Nombre de ligne</span>
+                                        <select id="countries" class="bg-gray-50 border w-20 focus:ring-2 focus:ring-blue-600 outline-none text-center items-center border-gray-300 text-gray-900 text-sm rounded-lg py-2 p-1 firefox-centered">
                                             <option selected>20</option>
-                                            <option value="US">50</option>
-                                            <option value="CA">100</option>
+                                            <option value="50">50</option>
+                                            <option value="100">100</option>
                                         </select>
                                     </div>
+                                    
                                     <div class="flex justify-center mb-3 ml-auto">
-                                        <div class="justify-center mt-5 border-[0.5px] border-black items-center p-1 w-fit rounded-l-lg text-gray-400 cursor-not-allowed"><i class="fa-solid fa-angles-left"></i></div>
-                                        <div class="justify-center mt-5 border-[0.5px] border-black items-center p-1 w-fit text-gray-400 cursor-not-allowed"><i class="fa-solid fa-angle-left"></i></div>
-                                        <div class="justify-center mt-5 border-[0.5px] border-black items-center p-1 min-w-fit cursor-pointer font-bold text-white bg-black flex gap-1"> <span>1</span> à <span>1</span> sur <span>1</span></div>
-                                        <div class="justify-center mt-5 border-[0.5px] border-black items-center p-1 w-fit cursor-pointer hover:text-white hover:bg-black"><i class="fa-solid fa-angle-right"></i></div>
-                                        <div class="justify-center mt-5 border-[0.5px] border-black items-center p-1 w-fit rounded-r-lg cursor-pointer hover:text-white hover:bg-black"><i class="fa-solid fa-angles-right"></i></div>
+                                        <div class="justify-center mt-5 border-[0.5px] border-black items-center w-fit rounded-l-lg text-gray-400 cursor-not-allowed"><i class="fa-solid fa-angles-left"></i></div>
+                                        <div class="justify-center mt-5 border-[0.5px] border-black items-center px-1 w-fit text-gray-400 cursor-not-allowed"><i class="fa-solid fa-angle-left"></i></div>
+                                        <div class="justify-center mt-5 border-[0.5px] border-black items-center px-1 min-w-fit text-xs cursor-pointer text-white bg-black flex gap-1"> <span>1</span> à <span>1</span> sur <span>1</span></div>
+                                        <div class="justify-center mt-5 border-[0.5px] border-black items-center px-1 w-fit cursor-pointer hover:text-white hover:bg-black"><i class="fa-solid fa-angle-right"></i></div>
+                                        <div class="justify-center mt-5 border-[0.5px] border-black items-center w-fit rounded-r-lg cursor-pointer hover:text-white hover:bg-black"><i class="fa-solid fa-angles-right"></i></div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="bg-gray-500 text-white hidden peer-checked/tab-two:block p-4 w-full">
+                            <div class="hidden peer-checked/tab-two:block p-1 w-full">
                               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non adipisci magnam possimus modi consectetur obcaecati ullam odit nisi sapiente delectus id aliquid aut consequatur soluta consequuntur dignissimos repudiandae, quod ea et ad! Quidem earum nulla accusamus consequuntur.
                             </div>
                           

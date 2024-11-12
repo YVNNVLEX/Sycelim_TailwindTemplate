@@ -33,3 +33,15 @@ body::-webkit-scrollbar-thumb {
   transition: all 2s ease-in-out;
   display: flex;
 }
+
+/* Centrage du texte pour tous les navigateurs */
+#countries,#type {
+  text-align: right;
+}
+
+/* CSS spécifique à Firefox */
+@-moz-document url-prefix() {
+  #countries option, #type option {
+      text-align: right;
+  }
+}
