@@ -11,6 +11,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap');
 
+body{
+  font-family: 'Montserrat';
+}
 body::-webkit-scrollbar {
     width: 5px;
     margin-top: 5px;              
@@ -34,14 +37,24 @@ body::-webkit-scrollbar-thumb {
   display: flex;
 }
 
-/* Centrage du texte pour tous les navigateurs */
-#countries,#type {
+/* #presta select , #practi select, #presta option , #practi option {
   text-align: right;
 }
 
 /* CSS spécifique à Firefox */
+/* @-moz-document url-prefix() {
+  #presta select , #practi select, #presta option , #practi option {
+    text-align: right;
+  }
+  
+}  */
+
 @-moz-document url-prefix() {
-  #countries option, #type option {
-      text-align: right;
+  #practi, #presta {
+    text-align: right;
+    direction: rtl;  
   }
 }
+  #practi, #presta {
+    text-align: right; 
+  } 
