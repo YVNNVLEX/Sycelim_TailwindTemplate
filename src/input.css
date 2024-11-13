@@ -53,8 +53,13 @@ body::-webkit-scrollbar-thumb {
   #practi, #presta {
     text-align: right;
     direction: rtl;  
+    color: black;
   }
 }
   #practi, #presta {
     text-align: right; 
+    color: black;
+  } 
+  #type option, #countries option{
+    color: black;
   } 
