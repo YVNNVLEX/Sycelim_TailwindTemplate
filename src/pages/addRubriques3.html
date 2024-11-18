@@ -30,20 +30,20 @@
          </div>
          <div id="userSet" style="display:none" class="absolute flex flex-col bg-white p-2 rounded-[10px] shadow-xl gap-2 right-4 top-20 min-w-40 transition-all duration-300">
             <div class="bg-blue-500 text-white p-2 rounded-lg">
-                <h1>Bienvenue John Doe</h1>
-                <p>Administrateur</p>
+                <h1 class="text-sm">Bienvenue John Doe</h1>
+                <p class="text-sm">Administrateur</p>
             </div>
             <a class="flex items-center gap-2 hover:bg-gray-300 p-2 rounded-lg" href="./login.html">
                 <i class="fa-solid fa-user"></i>
-                <span>Mon compte</span>
+                <span class="text-sm">Mon compte</span>
             </a>
             <a href="" class="flex items-center gap-2 hover:bg-gray-300 p-2 rounded-lg">
                 <i class="fa-solid fa-gear"></i>
-                <span>Paramètre</span>
+                <span class="text-sm">Paramètre</span>
             </a>
             <a href="" class="flex items-center gap-2 bg-red-500 rounded-lg text-white p-2">
                 <i class="fa-solid fa-arrow-right-from-bracket"></i>
-                <span>Se déconnecter</span>
+                <span class="text-sm">Se déconnecter</span>
             </a>
         </div>
     </div>
@@ -624,16 +624,6 @@
                                 <label for="social" class="font-semibold">Raison Social <span class="text-red-500 ml-1">*</span></label>
                                 <input type="text" name="username" class="mt-1 pl-3 pr-8 py-2 bg-white border shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-sky-500 focus:ring-sky-500 block w-full rounded-md sm:text-sm focus:ring-1" placeholder="Raison social" />
                             </div>
-                            <div class="flex gap-2">
-                                <div class="w-full">
-                                    <label for="centre" class="font-semibold">Code centre <span class="text-red-500 ml-1">*</span></label>
-                                    <input type="text" name="centre" class="mt-1 pl-3 pr-8 py-2 bg-white border shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-sky-500 focus:ring-sky-500 block w-full rounded-md sm:text-sm focus:ring-1" placeholder="Code centre" />
-                                </div>
-                                <div class="w-full">
-                                    <label for="fournisseur" class="font-semibold">Code Fournisseur <span class="text-red-500">*</span></label>
-                                    <input type="text" name="fournisseur" class="mt-1 pl-3 pr-8 py-2 bg-white border shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-sky-500 focus:ring-sky-500 block w-full rounded-md sm:text-sm focus:ring-1" placeholder="Code fournisseur" />
-                                </div>
-                            </div>
                             <div class="flex flex-col gap-1">
                                 <label for="type" class="font-semibold">Type <span class="text-red-500 ml-1">*</span></label>
                                 <select id="type" class=" border w-full outline-none text-slate-400 bg-white pl-3 pr-8 py-2 focus:ring-2 focus:ring-blue-600 border-gray-300 text-sm rounded-lg ">
@@ -644,30 +634,21 @@
                                     <option value="DE">Germany</option>
                                 </select>
                             </div>
-                            <div class="flex gap-2">
-                                <div class="w-full">
-                                    <label for="niveau" class="font-semibold">Niveau <span class="text-red-500 ml-1">*</span></label>
-                                    <input type="text" name="niveau" class="mt-1 pl-3 pr-8 py-2 bg-white border shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-sky-500 focus:ring-sky-500 block w-full rounded-md sm:text-sm focus:ring-1" placeholder="Code centre" />
-                                </div>
-                                <div class="w-full">
-                                    <label for="categorie" class="font-semibold">Code Fournisseur <span class="text-red-500">*</span></label>
-                                    <input type="text" name="fournisseur" class="mt-1 pl-3 pr-8 py-2 bg-white border shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-sky-500 focus:ring-sky-500 block w-full rounded-md sm:text-sm focus:ring-1" placeholder="Code fournisseur" />
-                                </div>
+                            <div class="w-full">
+                                <label for="niveau" class="font-semibold">Niveau <span class="text-red-500 ml-1">*</span></label>
+                                <input type="text" name="niveau" class="mt-1 pl-3 pr-8 py-2 bg-white border shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-sky-500 focus:ring-sky-500 block w-full rounded-md sm:text-sm focus:ring-1" placeholder="Code centre" />
+                            </div>
+                            <div class="w-full">
+                                <label for="categorie" class="font-semibold">Code Fournisseur <span class="text-red-500">*</span></label>
+                                <input type="text" name="fournisseur" class="mt-1 pl-3 pr-8 py-2 bg-white border shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-sky-500 focus:ring-sky-500 block w-full rounded-md sm:text-sm focus:ring-1" placeholder="Code fournisseur" />
                             </div>
                             <!-- <div>                           
                                 <label for="categorie" class="font-semibold">Code Fournisseur <span class="text-red-500 ml-1">*</span></label>
                                 <input type="date" name="fournisseur" class="appearance-none mt-1 pl-3 pr-2 py-2 bg-white border shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-sky-500 focus:ring-sky-500 block w-full rounded-md sm:text-sm focus:ring-1" placeholder="Code fournisseur" />
                             </div> -->
-                            <div class="relative w-full bg-white">
-                                <div class="absolute inset-y-0 start-0 flex items-center ps-3 mt-[25px] pointer-events-none">
-                                <svg class="w-4 h-4 text-gray-500 " aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-                                    <path d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z"/>
-                                </svg>
-                                </div>
-                                <div>
-                                    <label for="datepicker" class="font-semibold">Choisissez une date <span class="text-red-500 ml-1">*</span></label>
-                                    <input datepicker id="datepicker" type="text" class="bg-white border border-gray-300 text-gray-900 text-sm mt-1 pl-8 pr-2 py-2 placeholder-slate-400 focus:outline-none focus:border-sky-500 focus:ring-sky-500 block w-full rounded-md sm:text-sm focus:ring-1" placeholder="Select date">
-                                </div>
+                            <div>
+                                <label for="datepicker" class="font-semibold">Choisissez une date <span class="text-red-500 ml-1">*</span></label>
+                                <input datepicker id="datepicker" type="date" class="bg-white border border-gray-300 text-gray-900 text-sm mt-1 pl-3 pr-2 py-2 placeholder-slate-400 focus:outline-none focus:border-sky-500 focus:ring-sky-500 block w-full rounded-md sm:text-sm focus:ring-1" placeholder="Select date">
                             </div>
                             <div class="flex flex-col gap-1">
                                 <label for="type" class="font-semibold">Localité <span class="text-red-500 ml-1">*</span></label>
@@ -779,8 +760,8 @@
                         </div>
                     </div>
                     <div class="flex gap-5 my-7 justify-center md:justify-end md:mr-[50px] ">
-                        <button class="bg-green-500 py-2 px-5 text-white rounded-lg w-[130px]">Enregistrer</button>
-                        <button class="bg-red-500 py-2 px-5 text-white rounded-lg w-[130px]">Annuler</button>
+                        <button class="bg-green-500 py-2 px-5 text-white rounded-lg w-fit">Enregistrer</button>
+                        <button class="bg-red-500 py-2 px-5 text-white rounded-lg w-fit">Annuler</button>
                     </div>
                 </form>              
              </div>

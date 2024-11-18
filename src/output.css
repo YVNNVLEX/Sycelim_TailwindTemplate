@@ -1051,10 +1051,6 @@ input:checked + .toggle-bg {
   }
 }
 
-.pointer-events-none {
-  pointer-events: none;
-}
-
 .\!visible {
   visibility: visible !important;
 }
@@ -1091,11 +1087,6 @@ input:checked + .toggle-bg {
   inset: 0px;
 }
 
-.inset-y-0 {
-  top: 0px;
-  bottom: 0px;
-}
-
 .bottom-0 {
   bottom: 0px;
 }
@@ -1122,10 +1113,6 @@ input:checked + .toggle-bg {
 
 .right-4 {
   right: 1rem;
-}
-
-.start-0 {
-  inset-inline-start: 0px;
 }
 
 .top-0 {
@@ -1254,10 +1241,6 @@ input:checked + .toggle-bg {
   margin-top: 1.25rem;
 }
 
-.mt-\[25px\] {
-  margin-top: 25px;
-}
-
 .block {
   display: block;
 }
@@ -1366,6 +1349,10 @@ input:checked + .toggle-bg {
 
 .w-64 {
   width: 16rem;
+}
+
+.w-80 {
+  width: 20rem;
 }
 
 .w-\[100px\] {
@@ -1591,6 +1578,16 @@ input:checked + .toggle-bg {
   overflow-x: auto;
 }
 
+.overflow-x-hidden {
+  overflow-x: hidden;
+}
+
+.truncate {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
 .text-ellipsis {
   text-overflow: ellipsis;
 }
@@ -1813,11 +1810,6 @@ input:checked + .toggle-bg {
   padding-right: 1.25rem;
 }
 
-.px-\[0\.2px\] {
-  padding-left: 0.2px;
-  padding-right: 0.2px;
-}
-
 .px-\[14px\] {
   padding-left: 14px;
   padding-right: 14px;
@@ -1876,10 +1868,6 @@ input:checked + .toggle-bg {
 
 .pr-8 {
   padding-right: 2rem;
-}
-
-.ps-3 {
-  padding-inline-start: 0.75rem;
 }
 
 .pt-2 {
@@ -1948,11 +1936,6 @@ input:checked + .toggle-bg {
 
 .leading-9 {
   line-height: 2.25rem;
-}
-
-.text-black {
-  --tw-text-opacity: 1;
-  color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 
 .text-blue-600 {
@@ -2168,8 +2151,24 @@ body::-webkit-scrollbar-thumb {
   color: black;
 }
 
+#practi option, #presta option{
+  padding-right: 100px;
+}
+
 #type option, #countries option{
   color: black;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  #practi option, #presta option{
+    padding-right: 100px;
+  }
+}
+
+.espace{
+  display: flex;
+  width: 28px;
+  justify-content: center;
 }
 
 .file\:mr-4::file-selector-button {
@@ -2585,4 +2584,4 @@ body::-webkit-scrollbar-thumb {
 
 .rtl\:text-right:where([dir="rtl"], [dir="rtl"] *) {
   text-align: right;
-} 
+}

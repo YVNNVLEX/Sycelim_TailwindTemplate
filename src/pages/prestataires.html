@@ -9,7 +9,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-<body class="flex flex-col bg-gray-200 p-1 max-h-full font-montserrat mt-1 mx-1">
+<body class="flex flex-col bg-gray-200 p-1 max-h-full font-montserrat mt-1 mx-1 overflow-x-hidden">
     <div>
         <div class="w-full flex items-center h-13 bg-white rounded-[10px] px-[14px] py-5 ">
             <img src="../assets/image/logo.png" alt="logo" class="mr-auto w-[100px] md:full">
@@ -28,20 +28,20 @@
          </div>
          <div id="userSet" style="display:none" class="absolute flex flex-col bg-white p-2 rounded-[10px] shadow-xl gap-2 right-4 top-20 min-w-40 transition-all duration-300">
             <div class="bg-blue-500 text-white p-2 rounded-lg">
-                <h1>Bienvenue John Doe</h1>
-                <p>Administrateur</p>
+                <h1 class="text-sm">Bienvenue John Doe</h1>
+                <p class="text-sm">Administrateur</p>
             </div>
             <a class="flex items-center gap-2 hover:bg-gray-300 p-2 rounded-lg" href="./login.html">
                 <i class="fa-solid fa-user"></i>
-                <span>Mon compte</span>
+                <span class="text-sm">Mon compte</span>
             </a>
             <a href="" class="flex items-center gap-2 hover:bg-gray-300 p-2 rounded-lg">
                 <i class="fa-solid fa-gear"></i>
-                <span>Paramètre</span>
+                <span class="text-sm">Paramètre</span>
             </a>
             <a href="" class="flex items-center gap-2 bg-red-500 rounded-lg text-white p-2">
                 <i class="fa-solid fa-arrow-right-from-bracket"></i>
-                <span>Se déconnecter</span>
+                <span class="text-sm">Se déconnecter</span>
             </a>
         </div>
     </div>
@@ -623,7 +623,7 @@
                         </div>
                         <hr class="mt-2">
                         <div class="overflow-x-auto mt-5 border-[0.5px] border-black">
-                            <table class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400 cursor-pointer">
+                            <table class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
                                 <tbody>
                                     <tr class="text-xs font-bold text-white uppercase bg-black dark:bg-gray-700 dark:text-gray-400">
                                         <th scope="row" class="px-1 py-1 whitespace-nowrap dark:text-white overflow-hidden text-ellipsis ">
@@ -659,11 +659,11 @@
                                         </td>
                                     </tr>
                                     <tr class="bg-white dark:bg-gray-800 hover:bg-gray-50 dark:hover:bg-gray-600 cursor-pointer">
-                                        <th scope="row" class=" overflow-hidden text-ellipsis px-1 py-1 font-normal text-gray-400 text-gray-500 whitespace-nowrap dark:text-white">
-                                            Pubilc
+                                        <th scope="row" class=" overflow-hidden text-ellipsis px-1 py-1 font-normal text-gray-500 whitespace-nowrap dark:text-white">
+                                            Public
                                         </th>
-                                        <td class="px-1 py-1 overflow-hidden text-ellipsis border-l-[0.5px] border-l-white-700 ">
-                                            0
+                                        <td class="px-1 py-1 overflow-hidden truncate text-ellipsis border-l-[0.5px] border-l-white-700 ">
+                                            0 
                                         </td>
                                         <td class="px-1 py-1 overflow-hidden text-ellipsis border-l-[0.5px] border-l-white-700 ">
                                             
@@ -681,7 +681,7 @@
                                         </td>
                                     </tr>
                                     <tr class="bg-white dark:bg-gray-800 hover:bg-gray-50 dark:hover:bg-gray-600 cursor-pointer">
-                                        <th scope="row" class=" overflow-hidden text-ellipsis px-1 py-1 font-normal text-gray-400 text-gray-500 whitespace-nowrap dark:text-white">
+                                        <th scope="row" class=" overflow-hidden text-ellipsis px-1 py-1 font-normal text-gray-500 whitespace-nowrap dark:text-white">
                                             Centre Sociale Sigem
                                         </th>
                                         <td class="px-1 py-1 overflow-hidden text-ellipsis border-l-[0.5px] border-l-white-700 ">
@@ -703,7 +703,7 @@
                                         </td>
                                     </tr>
                                     <tr class="bg-white dark:bg-gray-800 hover:bg-gray-50 dark:hover:bg-gray-600 cursor-pointer">
-                                        <th scope="row" class=" overflow-hidden text-ellipsis px-1 py-1 font-normal text-gray-400 text-gray-500 whitespace-nowrap dark:text-white">
+                                        <th scope="row" class=" overflow-hidden text-ellipsis px-1 py-1 font-normal text-gray-500 whitespace-nowrap dark:text-white">
                                             4125
                                         </th>
                                         <td class="px-1 py-1 overflow-hidden text-ellipsis border-l-[0.5px] border-l-white-700 ">
@@ -725,7 +725,7 @@
                                         </td>
                                     </tr>
                                     <tr class="bg-white dark:bg-gray-800 hover:bg-gray-50 dark:hover:bg-gray-600 cursor-pointer">
-                                        <th scope="row" class=" overflow-hidden text-ellipsis px-1 py-1 font-normal text-gray-400 text-gray-500 whitespace-nowrap dark:text-white">
+                                        <th scope="row" class=" overflow-hidden text-ellipsis px-1 py-1 font-normal text-gray-500 whitespace-nowrap dark:text-white">
                                             info@sy.com
                                         </th>
                                         <td class="px-1 py-1 overflow-hidden text-ellipsis border-l-[0.5px] border-l-white-700 ">
@@ -747,7 +747,8 @@
                                         </td>
                                     </tr>
                                     <tr class="bg-white dark:bg-gray-800 hover:bg-gray-50 dark:hover:bg-gray-600 cursor-pointer">
-                                        <th scope="row" class=" overflow-hidden text-ellipsis px-1 py-1 font-normal text-gray-400 text-gray-500 whitespace-nowrap dark:text-white">
+                                        <th scope="row" class=" overflow-hidden text-ellipsis px-1 py-1 font-normal
+                                         text-gray-500 whitespace-nowrap dark:text-white w-80">
                                             oui
                                         </th>
                                         <td class="px-1 py-1 overflow-hidden text-ellipsis border-l-[0.5px] border-l-white-700 ">
@@ -780,7 +781,7 @@
                             <div class="w-full bg-black h-[1px]"></div>
                             <div class="hidden peer-checked/tab-one:block w-full">
                                 <div class="overflow-x-auto border-[0.5px] border-black my-1">
-                                    <table class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400 cursor-pointer">
+                                    <table class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
                                         <thead class="text-xs text-white uppercase bg-black p-2">
                                             <tr>
                                                 <th scope="col" class="px-1 py-2 lg:text-[14px]">

@@ -60,6 +60,19 @@ body::-webkit-scrollbar-thumb {
     text-align: right; 
     color: black;
   } 
+  #practi option, #presta option{
+    padding-right: 100px;
+  }
   #type option, #countries option{
     color: black;
   } 
+  @media screen and (-webkit-min-device-pixel-ratio:0) { 
+    #practi option, #presta option{
+      padding-right: 100px;
+  }
+}
+  .espace{
+    display: flex;
+    width: 28px;
+   justify-content: center;
+  }
