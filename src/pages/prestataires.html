@@ -29,7 +29,6 @@
          <div id="userSet" style="display:none" class="absolute flex flex-col bg-white p-2 rounded-[10px] shadow-xl gap-2 right-4 top-20 min-w-40 transition-all duration-300">
             <div class="bg-blue-500 text-white p-2 rounded-lg">
                 <h1 class="text-sm">Bienvenue John Doe</h1>
-                <p class="text-sm">Administrateur</p>
             </div>
             <a class="flex items-center gap-2 hover:bg-gray-300 p-2 rounded-lg" href="./login.html">
                 <i class="fa-solid fa-user"></i>
@@ -74,10 +73,10 @@
                             :class="expanded ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'"
                         >
                             <ul class="overflow-hidden">
-                                <li class="ml-[1rem] p-1 hover:bg-gray-300 cursor-pointer rounded-[5px]"><a class="pl-[0.25rem]" href="">Motifs</a></li>
-                                <li class="ml-[1rem] p-1 hover:bg-gray-300 cursor-pointer rounded-[5px]"><a class="pl-[0.25rem]" href="">Posologies</a></li>
-                                <li class="ml-[1rem] p-1 hover:bg-gray-300 cursor-pointer rounded-[5px]"><a class="pl-[0.25rem]" href="">Localités</a></li>
-                                <li class="ml-[1rem] p-1 hover:bg-gray-300 cursor-pointer rounded-[5px]"><a class="pl-[0.25rem]" href="">Rubriques</a></li>
+                                <li class="ml-[1rem] p-1 hover:bg-gray-300 cursor-pointer rounded-[5px]"><a class="pl-[0.25rem]" href="./prestataireCol1.html">PrestatairesCol1</a></li>
+                                <li class="ml-[1rem] p-1 hover:bg-gray-300 cursor-pointer rounded-[5px]"><a class="pl-[0.25rem]" href="./prestataireCol2.html">PrestatairesCol2</a></li>
+                                <li class="ml-[1rem] p-1 hover:bg-gray-300 cursor-pointer rounded-[5px]"><a class="pl-[0.25rem]" href="./prestataires.html">PrestatairesCol3</a></li>
+                                <li class="ml-[1rem] p-1 hover:bg-gray-300 cursor-pointer rounded-[5px]"><a class="pl-[0.25rem]" href="./prestataireCol4.html">PrestatairesCol4</a></li>
                             </ul>
                         </div>
                     </div>                                                                                              
@@ -623,143 +622,105 @@
                         </div>
                         <hr class="mt-2">
                         <div class="overflow-x-auto mt-5 border-[0.5px] border-black">
-                            <table class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
+                            <table class="w-full table-fixed text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
                                 <tbody>
+                                    <!-- Première ligne d'en-tête -->
                                     <tr class="text-xs font-bold text-white uppercase bg-black dark:bg-gray-700 dark:text-gray-400">
-                                        <th scope="row" class="px-1 py-1 whitespace-nowrap dark:text-white overflow-hidden text-ellipsis ">
+                                        <th scope="row" class="px-1 py-1 dark:text-white overflow-hidden text-ellipsis whitespace-nowrap max-w-[80px]">
                                             ID
                                         </th>
-                                        <td class="px-1 py-1 overflow-hidden text-ellipsis border-l-[0.5px] border-l-white-700 ">
+                                        <td class="px-1 py-1 overflow-hidden text-ellipsis whitespace-nowrap max-w-[80px] w-1/3 border-l-[0.5px] border-l-white-700">
                                             LOCALITES
                                         </td>
-                                        <td class="px-1 py-1 overflow-hidden text-ellipsis border-l-[0.5px] border-l-white-700 ">
+                                        <td class="px-1 py-1 overflow-hidden text-ellipsis whitespace-nowrap max-w-[80px] w-1/3 border-l-[0.5px] border-l-white-700">
                                             TYPE
                                         </td>
                                     </tr>
+                                    <!-- Ligne de contenu -->
                                     <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600 cursor-pointer">
-                                        <th scope="row" class=" overflow-hidden text-ellipsis px-1 py-1 font-normal text-gray-500 whitespace-nowrap dark:text-white">
+                                        <th scope="row" class="overflow-hidden text-ellipsis px-1 py-1 font-normal text-gray-500 dark:text-white whitespace-nowrap max-w-[80px]">
                                             0006
                                         </th>
-                                        <td class="px-1 py-1 overflow-hidden text-ellipsis border-l-[0.5px] border-l-white-700 ">
+                                        <td class="px-1 py-1 overflow-hidden text-ellipsis whitespace-nowrap max-w-[80px] w-1/3 border-l-[0.5px] border-l-white-700">
                                             Abidjan
                                         </td>
-                                        <td class="px-1 py-1 overflow-hidden text-ellipsis border-l-[0.5px] border-l-white-700 ">
+                                        <td class="px-1 py-1 overflow-hidden text-ellipsis whitespace-nowrap max-w-[80px] w-1/3 border-l-[0.5px] border-l-white-700">
                                             Otto
                                         </td>
                                     </tr>
+                                    <!-- Deuxième ligne d'en-tête -->
                                     <tr class="text-xs font-bold text-white uppercase bg-black dark:bg-gray-700 dark:text-gray-400">
-                                        <th scope="row" class="px-1 py-1 whitespace-nowrap dark:text-white overflow-hidden text-ellipsis ">
+                                        <th scope="row" class="px-1 py-1 dark:text-white overflow-hidden text-ellipsis whitespace-nowrap max-w-[80px]">
                                             STATUT
                                         </th>
-                                        <td class="px-1 py-1 overflow-hidden text-ellipsis border-l-[0.5px] border-l-white-700 ">
+                                        <td class="px-1 py-1 overflow-hidden text-ellipsis whitespace-nowrap max-w-[80px] w-1/3 border-l-[0.5px] border-l-white-700">
                                             NIVEAU
                                         </td>
-                                        <td class="px-1 py-1 overflow-hidden text-ellipsis border-l-[0.5px] border-l-white-700 ">
+                                        <td class="px-1 py-1 overflow-hidden text-ellipsis whitespace-nowrap max-w-[80px] w-1/3 border-l-[0.5px] border-l-white-700">
                                             CATEGORIES
                                         </td>
                                     </tr>
+                                    <!-- Ligne de contenu -->
                                     <tr class="bg-white dark:bg-gray-800 hover:bg-gray-50 dark:hover:bg-gray-600 cursor-pointer">
-                                        <th scope="row" class=" overflow-hidden text-ellipsis px-1 py-1 font-normal text-gray-500 whitespace-nowrap dark:text-white">
+                                        <th scope="row" class="overflow-hidden text-ellipsis px-1 py-1 font-normal text-gray-500 dark:text-white whitespace-nowrap max-w-[80px]">
                                             Public
                                         </th>
-                                        <td class="px-1 py-1 overflow-hidden truncate text-ellipsis border-l-[0.5px] border-l-white-700 ">
-                                            0 
+                                        <td class="px-1 py-1 overflow-hidden text-ellipsis whitespace-nowrap max-w-[80px] w-1/3 border-l-[0.5px] border-l-white-700">
+                                            0
                                         </td>
-                                        <td class="px-1 py-1 overflow-hidden text-ellipsis border-l-[0.5px] border-l-white-700 ">
-                                            
+                                        <td class="px-1 py-1 overflow-hidden text-ellipsis whitespace-nowrap max-w-[80px] w-1/3 border-l-[0.5px] border-l-white-700">
                                         </td>
                                     </tr>
+                                    <!-- Troisième ligne d'en-tête -->
                                     <tr class="text-xs font-bold text-white uppercase bg-black dark:bg-gray-700 dark:text-gray-400">
-                                        <th scope="row" class="px-1 py-1 whitespace-nowrap dark:text-white overflow-hidden text-ellipsis ">
-                                            Raison sociale
+                                        <th scope="row" class="px-1 py-1 dark:text-white overflow-hidden text-ellipsis whitespace-nowrap max-w-[80px]">
+                                            RAISON SOCIALE
                                         </th>
-                                        <td class="px-1 py-1 overflow-hidden text-ellipsis border-l-[0.5px] border-l-white-700 ">
-                                            Adresse
+                                        <td class="px-1 py-1 overflow-hidden text-ellipsis whitespace-nowrap max-w-[80px] w-1/3 border-l-[0.5px] border-l-white-700">
+                                            ADRESSE
                                         </td>
-                                        <td class="px-1 py-1 overflow-hidden text-ellipsis border-l-[0.5px] border-l-white-700 ">
-                                            Code Fournisseur
+                                        <td class="px-1 py-1 overflow-hidden text-ellipsis whitespace-nowrap max-w-[80px] w-1/3 border-l-[0.5px] border-l-white-700">
+                                            CODE FOURNISSEUR
                                         </td>
                                     </tr>
+                                    <!-- Ligne de contenu -->
                                     <tr class="bg-white dark:bg-gray-800 hover:bg-gray-50 dark:hover:bg-gray-600 cursor-pointer">
-                                        <th scope="row" class=" overflow-hidden text-ellipsis px-1 py-1 font-normal text-gray-500 whitespace-nowrap dark:text-white">
+                                        <th scope="row" class="overflow-hidden text-ellipsis px-1 py-1 font-normal text-gray-500 dark:text-white whitespace-nowrap max-w-[80px]">
                                             Centre Sociale Sigem
                                         </th>
-                                        <td class="px-1 py-1 overflow-hidden text-ellipsis border-l-[0.5px] border-l-white-700 ">
+                                        <td class="px-1 py-1 overflow-hidden text-ellipsis whitespace-nowrap max-w-[80px] w-1/3 border-l-[0.5px] border-l-white-700">
                                             Cocody ||plateaux
                                         </td>
-                                        <td class="px-1 py-1 overflow-hidden text-ellipsis border-l-[0.5px] border-l-white-700 ">
+                                        <td class="px-1 py-1 overflow-hidden text-ellipsis whitespace-nowrap max-w-[80px] w-1/3 border-l-[0.5px] border-l-white-700">
                                             8562
                                         </td>
                                     </tr>
+                                    <!-- Autres lignes d'en-tête et contenu (modèle similaire) -->
                                     <tr class="text-xs font-bold text-white uppercase bg-black dark:bg-gray-700 dark:text-gray-400">
-                                        <th scope="row" class="px-1 py-1 whitespace-nowrap dark:text-white overflow-hidden text-ellipsis ">
-                                            Code Centre
+                                        <th scope="row" class="px-1 py-1 dark:text-white overflow-hidden text-ellipsis whitespace-nowrap max-w-[80px]">
+                                            EMAIL
                                         </th>
-                                        <td class="px-1 py-1 overflow-hidden text-ellipsis border-l-[0.5px] border-l-white-700 ">
-                                            Boîte Postale
+                                        <td class="px-1 py-1 overflow-hidden text-ellipsis whitespace-nowrap max-w-[80px] w-1/3 border-l-[0.5px] border-l-white-700">
+                                            RESPONSABLE
                                         </td>
-                                        <td class="px-1 py-1 overflow-hidden text-ellipsis border-l-[0.5px] border-l-white-700 ">
-                                            Téléphone
+                                        <td class="px-1 py-1 overflow-hidden text-ellipsis whitespace-nowrap max-w-[80px] w-1/3 border-l-[0.5px] border-l-white-700">
+                                            MOBILE
                                         </td>
                                     </tr>
                                     <tr class="bg-white dark:bg-gray-800 hover:bg-gray-50 dark:hover:bg-gray-600 cursor-pointer">
-                                        <th scope="row" class=" overflow-hidden text-ellipsis px-1 py-1 font-normal text-gray-500 whitespace-nowrap dark:text-white">
-                                            4125
-                                        </th>
-                                        <td class="px-1 py-1 overflow-hidden text-ellipsis border-l-[0.5px] border-l-white-700 ">
-                                            21 BP Abidjan2024
-                                        </td>
-                                        <td class="px-1 py-1 overflow-hidden text-ellipsis border-l-[0.5px] border-l-white-700 ">
-                                            0101020548
-                                        </td>
-                                    </tr>
-                                    <tr class="text-xs font-bold text-white uppercase bg-black dark:bg-gray-700 dark:text-gray-400">
-                                        <th scope="row" class="px-1 py-1 whitespace-nowrap dark:text-white overflow-hidden text-ellipsis ">
-                                            Email
-                                        </th>
-                                        <td class="px-1 py-1 overflow-hidden text-ellipsis border-l-[0.5px] border-l-white-700 ">
-                                            Responsable
-                                        </td>
-                                        <td class="px-1 py-1 overflow-hidden text-ellipsis border-l-[0.5px] border-l-white-700 ">
-                                            mobile
-                                        </td>
-                                    </tr>
-                                    <tr class="bg-white dark:bg-gray-800 hover:bg-gray-50 dark:hover:bg-gray-600 cursor-pointer">
-                                        <th scope="row" class=" overflow-hidden text-ellipsis px-1 py-1 font-normal text-gray-500 whitespace-nowrap dark:text-white">
+                                        <th scope="row" class="overflow-hidden text-ellipsis px-1 py-1 font-normal text-gray-500 dark:text-white whitespace-nowrap max-w-[80px]">
                                             info@sy.com
                                         </th>
-                                        <td class="px-1 py-1 overflow-hidden text-ellipsis border-l-[0.5px] border-l-white-700 ">
+                                        <td class="px-1 py-1 overflow-hidden text-ellipsis whitespace-nowrap max-w-[80px] w-1/3 border-l-[0.5px] border-l-white-700">
                                             Coulibaly G
                                         </td>
-                                        <td class="px-1 py-1 overflow-hidden text-ellipsis border-l-[0.5px] border-l-white-700 ">
+                                        <td class="px-1 py-1 overflow-hidden text-ellipsis whitespace-nowrap max-w-[80px] w-1/3 border-l-[0.5px] border-l-white-700">
                                             0709020548
-                                        </td>
-                                    </tr>
-                                    <tr class="text-xs font-bold text-white uppercase bg-black dark:bg-gray-700 dark:text-gray-400">
-                                        <th scope="row" class="px-1 py-1 whitespace-nowrap dark:text-white overflow-hidden text-ellipsis ">
-                                            Activation
-                                        </th>
-                                        <td class="px-1 py-1 overflow-hidden text-ellipsis border-l-[0.5px] border-l-white-700 ">
-                                            Date de Création
-                                        </td>
-                                        <td class="px-1 py-1 overflow-hidden text-ellipsis border-l-[0.5px] border-l-white-700 ">
-                                            
-                                        </td>
-                                    </tr>
-                                    <tr class="bg-white dark:bg-gray-800 hover:bg-gray-50 dark:hover:bg-gray-600 cursor-pointer">
-                                        <th scope="row" class=" overflow-hidden text-ellipsis px-1 py-1 font-normal
-                                         text-gray-500 whitespace-nowrap dark:text-white w-80">
-                                            oui
-                                        </th>
-                                        <td class="px-1 py-1 overflow-hidden text-ellipsis border-l-[0.5px] border-l-white-700 ">
-                                            11/04/20 11:30
-                                        </td>
-                                        <td class="px-1 py-1 overflow-hidden text-ellipsis border-l-[0.5px] border-l-white-700 ">
-                                            
                                         </td>
                                     </tr>
                                 </tbody>
                             </table>
+                            
                         </div>
                         <div class="flex gap-5 my-2 justify-center md:justify-end">
                             <button class="bg-green-500 py-2 px-5 text-white rounded-lg w-[130px]">Modifier</button>
@@ -800,7 +761,7 @@
                                         </thead>
                                         <tbody>
                                             <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600 cursor-pointer">
-                                                <th scope="row" class=" overflow-hidden text-ellipsis px-1 py-1 font-normal text-gray-400 text-gray-500 whitespace-nowrap dark:text-white">
+                                                <th scope="row" class=" overflow-hidden text-ellipsis px-1 py-1 font-normal text-gray-400  dark:text-white">
                                                     1
                                                 </th>
                                                 <td class="px-1 py-1 overflow-hidden text-ellipsis border-l-[0.5px] border-l-white-700 ">
